@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8" ?><openbox_pipe_menu xmlns="http://openbox.org/"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:schemaLocation="http://openbox.org/" ><menu id="openbox-Development" label="Development" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/applications-development.svg">
+<menu id="openbox-Translation" label="Translation" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/applications-development-translation.svg">
+<item label="Qt 5 Linguist" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/linguist-qt5.svg"><action name="Execute"><command><![CDATA[/usr/lib/qt5/bin/linguist]]></command>
+</action></item>
+</menu>
+<item label="DB Browser for SQLite" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/sqlitebrowser.svg"><action name="Execute"><command><![CDATA[sqlitebrowser]]></command>
+</action></item>
+<item label="Oracle Java 8 Mission Control" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/oracle_java8.svg"><action name="Execute"><command><![CDATA[/usr/lib/jvm/java-8-oracle/bin/jmc]]></command>
+</action></item>
+<item label="Qt 5 Assistant" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/assistant-qt5.svg"><action name="Execute"><command><![CDATA[/usr/lib/qt5/bin/assistant]]></command>
+</action></item>
+<item label="Qt 5 Designer" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/designer-qt5.svg"><action name="Execute"><command><![CDATA[/usr/lib/qt5/bin/designer]]></command>
+</action></item>
+<item label="Visual Studio Code" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/code.svg"><action name="Execute"><command><![CDATA[/usr/share/code/code --unity-launch]]></command>
+</action></item>
+</menu>
+<menu id="openbox-Education" label="Education" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/applications-education.svg">
+<menu id="openbox-Mathematics" label="Mathematics" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/applications-education-mathematics.svg">
+<item label="LibreOffice Math" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/libreoffice-math.svg"><action name="Execute"><command><![CDATA[libreoffice --math]]></command>
+</action></item>
+</menu>
+<menu id="openbox-Science" label="Science" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/applications-science.svg">
+<item label="LibreOffice Math" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/libreoffice-math.svg"><action name="Execute"><command><![CDATA[libreoffice --math]]></command>
+</action></item>
+<item label="Marble" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/marble.svg"><action name="Execute"><command><![CDATA[marble-qt]]></command>
+</action></item>
+</menu>
+</menu>
+<menu id="openbox-Games" label="Games" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/applications-games.svg">
+<menu id="openbox-Card" label="Card Games" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/applications-games.svg">
+<item label="AisleRiot Solitaire" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/gnome-aisleriot.svg"><action name="Execute"><command><![CDATA[/usr/games/sol]]></command>
+</action></item>
+</menu>
+</menu>
+<menu id="openbox-Graphics" label="Graphics" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/applications-graphics.svg">
+<item label="Blender" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/blender.svg"><action name="Execute"><command><![CDATA[blender]]></command>
+</action></item>
+<item label="Dia" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/dia.svg"><action name="Execute"><command><![CDATA[dia]]></command>
+</action></item>
+<item label="GNU Image Manipulation Program" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/gimp.svg"><action name="Execute"><command><![CDATA[gimp-2.8]]></command>
+</action></item>
+<item label="Gwenview" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/gwenview.svg"><action name="Execute"><command><![CDATA[gwenview]]></command>
+</action></item>
+<item label="Inkscape" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/inkscape.svg"><action name="Execute"><command><![CDATA[inkscape]]></command>
+</action></item>
+<item label="LibreOffice Draw" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/libreoffice-draw.svg"><action name="Execute"><command><![CDATA[libreoffice --draw]]></command>
+</action></item>
+<item label="Okular" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/okular.svg"><action name="Execute"><command><![CDATA[okular]]></command>
+</action></item>
+<item label="Skanlite" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/devices/scanner.svg"><action name="Execute"><command><![CDATA[skanlite -qwindowtitle Skanlite --icon /usr/share/icons/Papirus-Adapta-Nokto/16x16/devices/scanner.svg]]></command>
+</action></item>
+</menu>
+<menu id="openbox-Internet" label="Internet" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/applications-internet.svg">
+<item label="Akregator" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/akregator.svg"><action name="Execute"><command><![CDATA[akregator]]></command>
+</action></item>
+<item label="bmon" icon="/usr/share/icons/gnome/16x16/mimetypes/empty.png"><action name="Execute"><command><![CDATA[xterm -e bmon]]></command>
+</action></item>
+<item label="Contact Print Theme Editor" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/kaddressbook.svg"><action name="Execute"><command><![CDATA[contactprintthemeeditor]]></command>
+</action></item>
+<item label="Contact Theme Editor" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/kaddressbook.svg"><action name="Execute"><command><![CDATA[contactthemeeditor]]></command>
+</action></item>
+<item label="FileZilla" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/filezilla.svg"><action name="Execute"><command><![CDATA[filezilla]]></command>
+</action></item>
+<item label="Firefox Web Browser" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/firefox.svg"><action name="Execute"><command><![CDATA[firefox]]></command>
+</action></item>
+<item label="KMail" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/kmail.svg"><action name="Execute"><command><![CDATA[kmail -qwindowtitle KMail]]></command>
+</action></item>
+<item label="KMail Header Theme Editor" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/kmail.svg"><action name="Execute"><command><![CDATA[headerthemeeditor]]></command>
+</action></item>
+<item label="Konversation" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/konversation.svg"><action name="Execute"><command><![CDATA[konversation -qwindowtitle Konversation]]></command>
+</action></item>
+<item label="KRDC" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/krdc.svg"><action name="Execute"><command><![CDATA[krdc -qwindowtitle KRDC]]></command>
+</action></item>
+<item label="KTnef" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/ktnef.svg"><action name="Execute"><command><![CDATA[ktnef]]></command>
+</action></item>
+<item label="KTorrent" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/ktorrent.svg"><action name="Execute"><command><![CDATA[ktorrent]]></command>
+</action></item>
+<item label="Oracle Java 8 Web Start" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/oracle_java8.svg"><action name="Execute"><command><![CDATA[/usr/lib/jvm/java-8-oracle/jre/bin/javaws]]></command>
+</action></item>
+<item label="PIM Setting Exporter" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/kontact.svg"><action name="Execute"><command><![CDATA[pimsettingexporter]]></command>
+</action></item>
+<item label="Sieve Editor" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/kmail.svg"><action name="Execute"><command><![CDATA[sieveeditor]]></command>
+</action></item>
+<item label="TeamViewer 13" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/TeamViewer.svg"><action name="Execute"><command><![CDATA[/opt/teamviewer/tv_bin/script/teamviewer]]></command>
+</action></item>
+<item label="Telegram Desktop" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/telegram.svg"><action name="Execute"><command><![CDATA[/opt/Telegram/Telegram --]]></command>
+</action></item>
+<item label="Thunderbird Mail" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/thunderbird.svg"><action name="Execute"><command><![CDATA[thunderbird]]></command>
+</action></item>
+</menu>
+<menu id="openbox-Multimedia" label="Multimedia" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/applications-multimedia.svg">
+<item label="Cantata" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/cantata.svg"><action name="Execute"><command><![CDATA[cantata]]></command>
+</action></item>
+<item label="K3b" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/k3b.svg"><action name="Execute"><command><![CDATA[k3b]]></command>
+</action></item>
+<item label="Kdenlive" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/kdenlive.svg"><action name="Execute"><command><![CDATA[kdenlive]]></command>
+</action></item>
+<item label="mpv Media Player" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/mpv.svg"><action name="Execute"><command><![CDATA[mpv --player-operation-mode=pseudo-gui --]]></command>
+</action></item>
+<item label="Ncmpcpp" icon="/usr/share/icons/gnome/16x16/mimetypes/empty.png"><action name="Execute"><command><![CDATA[xterm -e ncmpcpp]]></command>
+</action></item>
+<item label="PulseAudio Volume Control" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/actions/multimedia-volume-control.svg"><action name="Execute"><command><![CDATA[pavucontrol]]></command>
+</action></item>
+<item label="PulseAudio Volume Control" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/actions/multimedia-volume-control.svg"><action name="Execute"><command><![CDATA[pavucontrol-qt]]></command>
+</action></item>
+<item label="SimpleScreenRecorder" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/simplescreenrecorder.svg"><action name="Execute"><command><![CDATA[simplescreenrecorder --logfile]]></command>
+</action></item>
+<item label="VLC media player" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/vlc.svg"><action name="Execute"><command><![CDATA[/usr/bin/vlc --started-from-file]]></command>
+</action></item>
+</menu>
+<menu id="openbox-Office" label="Office" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/applications-office.svg">
+<item label="Contact Print Theme Editor" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/kaddressbook.svg"><action name="Execute"><command><![CDATA[contactprintthemeeditor]]></command>
+</action></item>
+<item label="Contact Theme Editor" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/kaddressbook.svg"><action name="Execute"><command><![CDATA[contactthemeeditor]]></command>
+</action></item>
+<item label="KAddressBook" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/kaddressbook.svg"><action name="Execute"><command><![CDATA[kaddressbook]]></command>
+</action></item>
+<item label="KMail" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/kmail.svg"><action name="Execute"><command><![CDATA[kmail -qwindowtitle KMail]]></command>
+</action></item>
+<item label="KMail Header Theme Editor" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/kmail.svg"><action name="Execute"><command><![CDATA[headerthemeeditor]]></command>
+</action></item>
+<item label="Kontact" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/kontact.svg"><action name="Execute"><command><![CDATA[kontact]]></command>
+</action></item>
+<item label="KOrganizer" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/korganizer.svg"><action name="Execute"><command><![CDATA[korganizer]]></command>
+</action></item>
+<item label="KTnef" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/ktnef.svg"><action name="Execute"><command><![CDATA[ktnef]]></command>
+</action></item>
+<item label="LibreOffice" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/libreoffice-startcenter.svg"><action name="Execute"><command><![CDATA[libreoffice]]></command>
+</action></item>
+<item label="LibreOffice Base" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/libreoffice-base.svg"><action name="Execute"><command><![CDATA[libreoffice --base]]></command>
+</action></item>
+<item label="LibreOffice Calc" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/libreoffice-calc.svg"><action name="Execute"><command><![CDATA[libreoffice --calc]]></command>
+</action></item>
+<item label="LibreOffice Draw" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/libreoffice-draw.svg"><action name="Execute"><command><![CDATA[libreoffice --draw]]></command>
+</action></item>
+<item label="LibreOffice Impress" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/libreoffice-impress.svg"><action name="Execute"><command><![CDATA[libreoffice --impress]]></command>
+</action></item>
+<item label="LibreOffice Math" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/libreoffice-math.svg"><action name="Execute"><command><![CDATA[libreoffice --math]]></command>
+</action></item>
+<item label="LibreOffice Writer" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/libreoffice-writer.svg"><action name="Execute"><command><![CDATA[libreoffice --writer]]></command>
+</action></item>
+<item label="Okular" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/okular.svg"><action name="Execute"><command><![CDATA[okular]]></command>
+</action></item>
+<item label="PIM Setting Exporter" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/kontact.svg"><action name="Execute"><command><![CDATA[pimsettingexporter]]></command>
+</action></item>
+<item label="qpdfview" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/qpdfview.svg"><action name="Execute"><command><![CDATA[qpdfview --unique]]></command>
+</action></item>
+<item label="Sieve Editor" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/kmail.svg"><action name="Execute"><command><![CDATA[sieveeditor]]></command>
+</action></item>
+</menu>
+<menu id="openbox-Settingsmenu" label="Settings" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/actions/preferences-system.svg">
+<item label="IBus Preferences" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/ibus-setup.svg"><action name="Execute"><command><![CDATA[ibus-setup]]></command>
+</action></item>
+<item label="Input Method" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/devices/input-keyboard.svg"><action name="Execute"><command><![CDATA[im-config]]></command>
+</action></item>
+<item label="Kvantum Manager" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/kvantum.svg"><action name="Execute"><command><![CDATA[kvantummanager]]></command>
+</action></item>
+<item label="Openbox Configuration Manager" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/obconf.svg"><action name="Execute"><command><![CDATA[obconf]]></command>
+</action></item>
+<item label="Oracle Java 8 Plugin Control Panel" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/oracle_java8.svg"><action name="Execute"><command><![CDATA[/usr/lib/jvm/java-8-oracle/bin/ControlPanel]]></command>
+</action></item>
+<item label="Oracle Java 8 Policy Tool" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/oracle_java8.svg"><action name="Execute"><command><![CDATA[/usr/lib/jvm/java-8-oracle/bin/policytool]]></command>
+</action></item>
+<item label="Samba" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/system-config-samba.svg"><action name="Execute"><command><![CDATA[gksu system-config-samba]]></command>
+</action></item>
+<item label="Software Updater" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/system-software-update.svg"><action name="Execute"><command><![CDATA[/usr/bin/update-manager]]></command>
+</action></item>
+<item label="System Settings" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/actions/preferences-system.svg"><action name="Execute"><command><![CDATA[systemsettings5]]></command>
+</action></item>
+<item label="Tint2 Settings" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/tint2conf.svg"><action name="Execute"><command><![CDATA[tint2conf]]></command>
+</action></item>
+<item label="xdiagnose" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/xdiagnose.svg"><action name="Execute"><command><![CDATA[xdiagnose-pkexec]]></command>
+</action></item>
+</menu>
+<menu id="openbox-System" label="System" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/applications-system.svg">
+<item label="BleachBit" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/bleachbit.svg"><action name="Execute"><command><![CDATA[bleachbit]]></command>
+</action></item>
+<item label="BleachBit (as root)" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/bleachbit.svg"><action name="Execute"><command><![CDATA[pkexec bleachbit]]></command>
+</action></item>
+<item label="dconf Editor" icon="/usr/share/icons/gnome/16x16/mimetypes/empty.png"><action name="Execute"><command><![CDATA[dconf-editor]]></command>
+</action></item>
+<item label="Discover" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/plasmadiscover.svg"><action name="Execute"><command><![CDATA[plasma-discover]]></command>
+</action></item>
+<item label="Dolphin" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/system-file-manager.svg"><action name="Execute"><command><![CDATA[dolphin]]></command>
+</action></item>
+<item label="Htop" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/htop.svg"><action name="Execute"><command><![CDATA[xterm -e htop]]></command>
+</action></item>
+<item label="Info Center" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/hwinfo.svg"><action name="Execute"><command><![CDATA[kinfocenter]]></command>
+</action></item>
+<item label="K3b" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/k3b.svg"><action name="Execute"><command><![CDATA[k3b]]></command>
+</action></item>
+<item label="KDE Partition Manager" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/partitionmanager.svg"><action name="Execute"><command><![CDATA[partitionmanager]]></command>
+</action></item>
+<item label="Konsole" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/utilities-terminal.svg"><action name="Execute"><command><![CDATA[konsole]]></command>
+</action></item>
+<item label="KSysGuard" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/utilities-system-monitor.svg"><action name="Execute"><command><![CDATA[ksysguard]]></command>
+</action></item>
+<item label="KSystemLog" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/utilities-log-viewer.svg"><action name="Execute"><command><![CDATA[ksystemlog -qwindowtitle KSystemLog]]></command>
+</action></item>
+<item label="KWalletManager" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/kwalletmanager.svg"><action name="Execute"><command><![CDATA[kwalletmanager5]]></command>
+</action></item>
+<item label="Midnight Commander" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/MidnightCommander.svg"><action name="Execute"><command><![CDATA[xterm -e mc]]></command>
+</action></item>
+<item label="Muon Package Manager" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/muon.svg"><action name="Execute"><command><![CDATA[muon]]></command>
+</action></item>
+<item label="Oracle Java 8 Console" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/oracle_java8.svg"><action name="Execute"><command><![CDATA[/usr/lib/jvm/java-8-oracle/bin/jconsole]]></command>
+</action></item>
+<item label="Oracle Java 8 VisualVM" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/oracle_java8.svg"><action name="Execute"><command><![CDATA[/usr/lib/jvm/java-8-oracle/bin/jvisualvm]]></command>
+</action></item>
+<item label="Oracle VM VirtualBox" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/virtualbox.svg"><action name="Execute"><command><![CDATA[VirtualBox]]></command>
+</action></item>
+<item label="pgAdmin4" icon="/usr/share/icons/hicolor/256x256/apps/pgadmin4.png"><action name="Execute"><command><![CDATA[/usr/bin/pgAdmin4]]></command>
+</action></item>
+<item label="ranger" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/utilities-terminal.svg"><action name="Execute"><command><![CDATA[xterm -e ranger]]></command>
+</action></item>
+<item label="Samba" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/system-config-samba.svg"><action name="Execute"><command><![CDATA[gksu system-config-samba]]></command>
+</action></item>
+<item label="Software Updater" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/system-software-update.svg"><action name="Execute"><command><![CDATA[/usr/bin/update-manager]]></command>
+</action></item>
+<item label="Tint2" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/tint2.svg"><action name="Execute"><command><![CDATA[tint2]]></command>
+</action></item>
+<item label="UNetbootin" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/unetbootin.svg"><action name="Execute"><command><![CDATA[/usr/bin/unetbootin]]></command>
+</action></item>
+<item label="UXTerm" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/xterm-color.svg"><action name="Execute"><command><![CDATA[uxterm]]></command>
+</action></item>
+<item label="xdiagnose" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/xdiagnose.svg"><action name="Execute"><command><![CDATA[xdiagnose-pkexec]]></command>
+</action></item>
+<item label="XTerm" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/xterm-color.svg"><action name="Execute"><command><![CDATA[xterm]]></command>
+</action></item>
+</menu>
+<menu id="openbox-Utilities" label="Utilities" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/applications-utilities.svg">
+<item label="Ark" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/ark.svg"><action name="Execute"><command><![CDATA[ark]]></command>
+</action></item>
+<item label="Caffeine" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/caffeine.svg"><action name="Execute"><command><![CDATA[/usr/bin/caffeine]]></command>
+</action></item>
+<item label="Caffeine Indicator" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/caffeine.svg"><action name="Execute"><command><![CDATA[/usr/bin/caffeine-indicator]]></command>
+</action></item>
+<item label="DB Browser for SQLite" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/sqlitebrowser.svg"><action name="Execute"><command><![CDATA[sqlitebrowser]]></command>
+</action></item>
+<item label="Etcher" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/etcher-electron.svg"><action name="Execute"><command><![CDATA["/opt/Etcher/etcher-electron"]]></command>
+</action></item>
+<item label="Kate" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/kate.svg"><action name="Execute"><command><![CDATA[kate -b]]></command>
+</action></item>
+<item label="KCalc" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/accessories-calculator.svg"><action name="Execute"><command><![CDATA[kcalc]]></command>
+</action></item>
+<item label="KFind" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/kfind.svg"><action name="Execute"><command><![CDATA[kfind]]></command>
+</action></item>
+<item label="Kleopatra" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/kleopatra.svg"><action name="Execute"><command><![CDATA[kleopatra]]></command>
+</action></item>
+<item label="KNotes" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/knotes.svg"><action name="Execute"><command><![CDATA[knotes]]></command>
+</action></item>
+<item label="KRename" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/krename.svg"><action name="Execute"><command><![CDATA[krename -qwindowtitle "KRename" --icon /usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/krename.svg]]></command>
+</action></item>
+<item label="KTnef" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/ktnef.svg"><action name="Execute"><command><![CDATA[ktnef]]></command>
+</action></item>
+<item label="Kvantum Manager" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/kvantum.svg"><action name="Execute"><command><![CDATA[kvantummanager]]></command>
+</action></item>
+<item label="Latte" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/latte-dock.svg"><action name="Execute"><command><![CDATA[latte-dock]]></command>
+</action></item>
+<item label="Midnight Commander" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/MidnightCommander.svg"><action name="Execute"><command><![CDATA[xterm -e mc]]></command>
+</action></item>
+<item label="Midnight Commander editor" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/MidnightCommander.svg"><action name="Execute"><command><![CDATA[xterm -e mcedit]]></command>
+</action></item>
+<item label="Rxvt Color Unicode Terminal" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/urxvt_48x48.svg"><action name="Execute"><command><![CDATA[urxvt]]></command>
+</action></item>
+<item label="Spectacle" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/spectacle.svg"><action name="Execute"><command><![CDATA[spectacle]]></command>
+</action></item>
+<item label="StarDict" icon="/usr/share/pixmaps/stardict.png"><action name="Execute"><command><![CDATA[stardict]]></command>
+</action></item>
+<item label="Text Editor" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/gedit.svg"><action name="Execute"><command><![CDATA[gedit]]></command>
+</action></item>
+<item label="Vim" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/gvim.svg"><action name="Execute"><command><![CDATA[xterm -e vim]]></command>
+</action></item>
+<item label="Visual Studio Code" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/code.svg"><action name="Execute"><command><![CDATA[/usr/share/code/code --unity-launch]]></command>
+</action></item>
+<item label="Winetricks" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/winetricks.svg"><action name="Execute"><command><![CDATA[winetricks --gui]]></command>
+</action></item>
+</menu>
+<menu id="openbox-wine-wine" label="Wine" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/wine.svg">
+<menu id="openbox-wine-Programs" label="Programs" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/places/folder.svg">
+<menu id="openbox-wine-Programs-WinRAR" label="WinRAR" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/places/folder.svg">
+<item label="Console RAR manual" icon="/usr/share/icons/gnome/16x16/mimetypes/empty.png"><action name="Execute"><command><![CDATA[env WINEPREFIX="/home/dani/.wine" wine C:\windows\\command\\start.exe /Unix /home/dani/.wine/dosdevices/c:/users/Public/Start\ Menu/Programs/WinRAR/Console\ RAR\ manual.lnk]]></command>
+</action></item>
+<item label="What is new in the latest version" icon="/usr/share/icons/gnome/16x16/mimetypes/empty.png"><action name="Execute"><command><![CDATA[env WINEPREFIX="/home/dani/.wine" wine C:\windows\\command\\start.exe /Unix /home/dani/.wine/dosdevices/c:/users/Public/Start\ Menu/Programs/WinRAR/What\ is\ new\ in\ the\ latest\ version.lnk]]></command>
+</action></item>
+<item label="WinRAR" icon="/usr/share/icons/gnome/16x16/mimetypes/empty.png"><action name="Execute"><command><![CDATA[env WINEPREFIX="/home/dani/.wine" wine C:\windows\\command\\start.exe /Unix /home/dani/.wine/dosdevices/c:/users/Public/Start\ Menu/Programs/WinRAR/WinRAR.lnk]]></command>
+</action></item>
+<item label="WinRAR help" icon="/usr/share/icons/gnome/16x16/mimetypes/empty.png"><action name="Execute"><command><![CDATA[env WINEPREFIX="/home/dani/.wine" wine C:\windows\\command\\start.exe /Unix /home/dani/.wine/dosdevices/c:/users/Public/Start\ Menu/Programs/WinRAR/WinRAR\ help.lnk]]></command>
+</action></item>
+</menu>
+</menu>
+</menu>
+<item label="Help" icon="/usr/share/icons/Papirus-Adapta-Nokto/16x16/apps/help-browser.svg"><action name="Execute"><command><![CDATA[khelpcenter]]></command>
+</action></item>
+</openbox_pipe_menu>

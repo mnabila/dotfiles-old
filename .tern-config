@@ -1,0 +1,13 @@
+{
+   "libs": [
+     "browser",
+     "jquery",
+     "react",
+     "ecmascript"
+   ],
+   "plugins": {
+       "doc_comment": null,
+       "node": {},
+       "complete_strings": {}
+   }
+ }

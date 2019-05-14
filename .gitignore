@@ -1,0 +1,9 @@
+.config/mpd/mpd.log
+.config/mpd/mpd.pid
+.config/mpd/mpdstate
+.config/ranger/__pycache__/
+.config/ranger/bookmarks
+.config/ranger/colorschemes/__pycache__/
+.config/ranger/history
+.config/rofi-tools
+copier.sh

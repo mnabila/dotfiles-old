@@ -1,0 +1,499 @@
+; vim:ft=dosini
+;==========================================================
+;
+;
+;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
+;   ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
+;   ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝
+;   ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
+;   ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
+;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+;
+;
+;   To learn more about how to configure Polybar
+;   go to https://github.com/jaagr/polybar
+;
+;   The README contains alot of information
+;
+;==========================================================
+
+[colors]
+background      = ${xrdb:background}
+foreground      = ${xrdb:foreground}
+
+black           = ${xrdb:color0}
+brightblack     = ${xrdb:color8}
+
+red             = ${xrdb:color1}
+brightred       = ${xrdb:color9}
+red-alt         = #c67d6f
+
+green           = ${xrdb:color2}
+brightgreen     = ${xrdb:color10}
+
+yellow          = ${xrdb:color3}
+brightyellow    = ${xrdb:color11}
+
+blue            = ${xrdb:color4}
+brightblue      = ${xrdb:color12}
+
+mangenta        = ${xrdb:color5}
+brightmangenta  = ${xrdb:color13}
+
+cyan            = ${xrdb:color6}
+brightcyan      = ${xrdb:color14}
+
+white           = ${xrdb:color7}
+brightwhite     = ${xrdb:color15}
+
+
+[settings]
+screenchange-reload = true
+;compositing-background = xor
+compositing-background = screen
+compositing-foreground = source
+;compositing-border = over
+pseudo-transparency = true
+format-foreground = ${colors.foreground}
+format-background = ${colors.background}
+;format-underline =
+;format-overline =
+;format-spacing =
+;format-padding =
+;format-margin =
+;format-offset =
+
+
+[global/wm]
+margin-top = 0
+margin-bottom = 0
+
+
+[bar/bottom]
+; Use the following command to list available outputs:
+; $ xrandr -q | grep " connected" | cut -d ' ' -f1
+monitor = ${env:MONITOR:LVDS1}
+bottom = true
+width = 100%
+height = 20
+offset-x = 0
+offset-y = 0
+radius = 0
+fixed-center = true
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 0
+
+border-top-size = 3
+border-top-color = ${colors.background}
+border-bottom-size = 0
+border-bottom-color = ${colors.brightblack}
+border-left-size = 0
+border-left-color = ${colors.brightblack}
+border-right-size = 0
+border-right-color = ${colors.brightblack}
+
+padding-left = 0
+padding-right = 0
+
+module-margin-left = 0
+module-margin-right = 0
+
+font-0 = "SauceCodePro Nerd Font Mono:pixelsize=11:Light"
+font-1 = "Hack Nerd Font Mono:pixelsize=11"
+font-2 = "Radio Space:pixelsize=11"
+font-3 = "Iosevka Nerd Font:Light:pixelsize=12"
+font-4 = "bitocra13full:Regular:pixelsize=12"
+
+modules-left = jgmenu ewmh mpd_control network wlan
+;modules-center = 
+modules-right = temperature hdd0 hdd1 cpu memory xbacklight volume date session
+
+tray-position = center
+tray-padding = 1
+tray-detached = false
+tray-maxsize = 16
+;tray-transparent = false
+tray-scale = 1.0
+tray-background = ${colors.background}
+tray-foreground = ${colors.foreground}
+tray-offses-x = 0
+tray-offset-y = 0
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+separator = "*"
+
+;wm-restack = i3
+;override-redirect = true
+
+[module/i3]
+type = internal/i3
+index-sort = true
+wrapping-scroll = true
+strip-wsnumbers = true
+pin-workspaces = true
+fuzzy-match = true
+
+ws-icon-0 = 1;
+ws-icon-1 = 2;
+ws-icon-2 = 3;
+ws-icon-3 = 4;
+ws-icon-4 = 5;
+ws-icon-5 = 6;
+ws-icon-6 = 7;
+ws-icon-7 = 8;
+ws-icon-8 = 9;
+ws-icon-9 = 0;
+
+format-background = ${colors.brightblack}
+format-foreground = ${colors.background}
+
+label-focused-foreground = ${colors.background}
+label-focused-background = ${colors.brightblack}
+
+label-unfocused-foreground = ${colors.black}
+label-unfocused-background = ${colors.brightblack}
+
+label-visible-foreground = ${colors.black}
+label-visible-background = ${colors.brightblack}
+
+label-urgent-foreground = ${colors.red}
+label-urgent-background = ${colors.brightblack}
+
+label-focused = %{T2}%icon% %{T-}
+label-unfocused = %{T2}%icon% %{T-}
+label-visible = %{T2}%icon% %{T-}
+label-urgent = %{T2}%icon% %{T-}
+
+label-mode = %mode%
+label-mode-padding = 2
+label-mode-background = ${colors.brightblack}
+label-mode-foreground = ${colors.red}
+
+[module/ewmh]
+type = internal/xworkspaces
+pin-workspaces = true
+enable-click = true
+enable-scroll = false
+icon-0 = 0;♚
+icon-1 = 1;♛
+icon-2 = 2;♜
+icon-3 = 3;♝
+icon-default = ♟
+
+format = <label-state>
+label-active = %name%
+label-active-font = 5
+label-active-foreground = ${colors.brightwhite}
+label-active-padding = 1
+
+label-occupied = %name%
+label-occupied-font = 5
+label-occupied-padding = 1
+
+label-urgent = %name%
+label-urgent-font = 5
+label-urgent-padding = 1
+
+label-empty = %name%
+label-empty-padding = 1
+
+
+[module/title]
+type = internal/xwindow
+format = <label>
+format-prefix = " "
+format-suffix = " "
+format-padding = 0
+format-background = ${colors.background}
+format-foreground = ${colors.background}
+
+label = %title%
+label-font = 5
+label-maxlen = 50
+
+
+
+[module/mpd_title]
+type = internal/mpd
+host = 127.0.0.1
+port = 6006
+format-online = <label-song>
+format-online-font = 1
+format-playing = ${self.format-online}
+format-paused =
+format-offline =
+label-song =  %artist% ╏ %title%
+
+
+[module/mpd_control]
+type = internal/mpd
+host = 127.0.0.1
+port = 6006
+format-online = <icon-prev> <icon-repeat> <icon-random> <icon-pause> <icon-play> <icon-next> 
+format-online-font = 5
+format-online-padding = 1
+
+label-offline =  mpd is offline
+label-offline-font = 5
+label-offline-foreground = ${colors.black}
+label-offline-background = ${colors.brightblack}
+label-offline-padding = 1
+
+format-offline = <label-offline>
+format-playing = ${self.format-online}
+format-paused = ${self.format-online}
+format-stopped = ${self.format-online}
+
+; Only applies if <icon-X> is used
+icon-play = 
+icon-pause = 
+icon-stop = 
+icon-prev = 
+icon-next = 
+icon-seekb = 
+icon-seekf = 
+icon-random = 
+icon-repeat = 凌
+icon-repeatone = 綾
+icon-single = 綾
+icon-consume = ✀
+
+toggle-on-foreground = ${colors.white}
+toggle-off-foreground = ${colors.brightwhite}
+
+
+[module/volume]
+type = internal/pulseaudio
+master-mixer = Master
+mapped = true
+interval = 5
+
+format-volume = <label-volume>
+format-volume-prefix = "墳 "
+format-volume-suffix = "%"
+format-volume-padding = 1
+
+format-muted = <label-muted>
+format-muted-prefix = "墳 "
+format-muted-suffix = "%"
+format-muted-padding = 1
+format-muted-foreground = ${colors.black}
+
+label-volume = %percentage:3:3%
+label-volume-font = 5
+label-muted = %percentage:3:3%
+label-muted-font = 5
+
+
+
+[module/xbacklight]
+type = internal/xbacklight
+output = LVDS1
+enable-scroll = false
+
+format = <label>
+format-prefix = " "
+format-suffix = "%"
+format-padding = 1
+
+label = %percentage:3:3%
+label-font = 5
+
+
+[module/cpu]
+type = internal/cpu
+interval = 1
+
+format = <label>
+format-prefix = " "
+format-suffix = "%"
+format-padding = 1
+
+label = %percentage:3:3%
+label-font = 5
+
+
+[module/memory]
+type = internal/memory
+interval = 1
+format = <label>
+format-prefix = " "
+format-suffix = "%"
+format-padding = 1
+
+;label = %percentage_used:3:3%
+label = %gb_used%
+label-font = 5
+
+
+[module/date]
+type = internal/date
+interval = 1.0
+
+date = %A
+date-alt = %A, %d %B %Y
+
+time = %H:%M %p
+time-alt = %A, %d %B %Y
+
+format = <label>
+format-prefix = " "
+format-padding = 1
+
+label = %time%
+label-font = 5
+
+
+[module/network]
+type = internal/network
+interface = wlp3s0
+interval = 1
+udspeed-minwidth = 2
+accumulate-stats = true
+unknown-as-up = true
+
+format-connected = <label-connected>
+format-connected-prefix ="龍 "
+format-connected-padding = 1
+
+format-disconnected = <label-disconnected>
+;format-disconnected-prefix ="龍 "
+format-disconnected-foreground = ${colors.brightblack}
+format-disconnected-padding = 1
+
+format-packetloss = <animation-packetloss> <label-connected>
+
+
+;label-connected = %essid%
+label-connected = "%downspeed:%  %upspeed:%"
+label-connected-font = 5
+;label-connected-underline = ${colors.brightcyan}
+
+label-disconnected = " -- KB/s   -- KB/s"
+label-disconnected-font = 5
+
+[module/wlan]
+type = internal/network
+interface = wlp3s0
+interval = 1
+udspeed-minwidth = 2
+accumulate-stats = true
+unknown-as-up = true
+
+format-connected = <label-connected>
+format-connected-prefix ="直 "
+format-connected-padding = 1
+
+format-disconnected = <label-disconnected>
+format-disconnected-prefix ="直 "
+format-disconnected-foreground = ${colors.brightblack}
+format-disconnected-padding = 1
+
+format-packetloss = <animation-packetloss> <label-connected>
+
+
+label-connected = %essid%
+;label-connected = "%downspeed:%  %upspeed:%"
+label-connected-font = 5
+;label-connected-underline = ${colors.brightcyan}
+
+label-disconnected = offline
+label-disconnected-font = 5
+
+
+[module/spotify]
+type = custom/script
+interval = 1
+format = <label>
+exec = python /home/dani/.config/polybar/script/spotify_status.py -f '{artist}: {song}'
+;format-underline = #1db954
+
+
+[module/hdd0]
+type = custom/script
+interval = 1
+label-font = 5
+format = <label>
+format-prefix = " "
+format-padding = 1
+exec = hddtemp /dev/sda | cut -b 33-37
+;format-underline = #1db954
+
+
+[module/hdd1]
+type = custom/script
+interval = 1
+label-font = 5
+format = <label>
+format-prefix = " "
+format-padding = 1
+exec = hddtemp /dev/sdb | cut -b 33-37
+;format-underline = #1db954
+
+
+[module/temperature]
+type = internal/temperature
+interval = 1
+thermal-zone = 0
+hwmon-path = /sys/devices/virtual/thermal/thermal_zone0/hwmon0/temp1_input
+warn-temperature = 60
+units = true
+format = <label>
+format-prefix = " "
+format-padding = 1
+
+format-warn = <label-warn>
+format-warn-prefix = " "
+format-warn-background = ${colors.brightred}
+format-warn-padding = 1
+
+label = %temperature-c%
+label-font = 5
+
+label-warn = %temperature-c%
+label-warn-font = 5
+
+
+[module/battery]
+type = internal/battery
+full-at = 99
+; Use the following command to list batteries and adapters:
+; $ ls -1 /sys/class/power_supply/
+battery = BAT0
+adapter = ADP0
+
+format-charging = "<animation-charging><label-charging>"
+;format-charging-underline = ${colors.foreground}
+
+format-discharging = "<ramp-capacity><label-discharging>"
+;format-discharging-underline = ${self.format-charging-underline}
+
+format-full-prefix = "  "
+;format-full-underline = ${self.format-charging-underline}
+
+ramp-capacity-0 = "  "
+ramp-capacity-1 = "  "
+ramp-capacity-2 = "  "
+
+animation-charging-0 = "  "
+animation-charging-1 = "  "
+animation-charging-2 = "  "
+animation-charging-framerate = 750
+
+
+[module/jgmenu]
+type = custom/text
+content-padding = 1
+content = 
+click-left = "jgmenu_run >/dev/null 2>&1 &"
+
+[module/session]
+type = custom/text
+content-padding = 1
+content = 
+click-left = "~/.config/polybar/script/session.sh"

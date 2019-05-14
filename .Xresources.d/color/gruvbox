@@ -1,0 +1,38 @@
+!! """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+!! gruvbox dark colorscheme
+!! """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+*.background:           #282828
+*.foreground:           #ebdbb2
+
+!black and bright black
+*.color0:               #282828
+*.color8:               #3c3836
+
+!red and bright red
+*.color1:               #cc241d
+*.color9:               #fb4934
+
+! green and bright green
+*.color2:               #98971a
+*.color10:              #b8bb26
+
+! yellow and bright yellow
+*.color3:               #d79921
+*.color11:              #fabd2f
+
+! blue and bright blue
+*.color4:               #458588
+*.color12:              #83a598
+
+! purple and bright purple
+*.color5:               #b16286
+*.color13:              #d3869b
+
+! cyan and bright cyan
+*.color6:               #689d6a
+*.color14:              #8ec07c
+
+! white and bright white
+*.color7:               #ebdbb2
+*.color15:              #fbf1c7

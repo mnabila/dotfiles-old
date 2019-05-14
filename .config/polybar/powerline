@@ -1,0 +1,438 @@
+; vim:ft=dosini
+;==========================================================
+;
+;
+;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
+;   ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
+;   ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝
+;   ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
+;   ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
+;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+;
+;
+;   To learn more about how to configure Polybar
+;   go to https://github.com/jaagr/polybar
+;
+;   The README contains alot of information
+;
+;==========================================================
+
+[colors]
+background      = #131c26
+foreground      = #d3dae3
+
+black           =#3a4e56
+brightblack     =#556064
+
+red             =#e14245
+brightred       =#e16f7e
+red-alt         =#c67d6f
+
+green           = #5ca75b
+brightgreen     = #add488
+
+yellow          = #f6ab32
+brightyellow    = #fdc35f
+
+blue            = #4877b1
+brightblue      = #8ca9bf
+
+mangenta        = #a660c3
+brightmangenta  = #e2afec
+
+cyan            = #00bcd4
+brightcyan      = #73c5e2
+
+white           = #a9a9aa
+brightwhite     = #fcfcfc
+
+warn            = #f6ab32
+alert           = #e14245
+section         = #556064
+section_off     = #556064
+
+[global/wm]
+margin-top = 0
+margin-bottom = 0
+
+
+[settings]
+screenchange-reload = true
+;compositing-background = xor
+compositing-background = screen
+compositing-foreground = source
+;compositing-border = over
+pseudo-transparency = true
+label-font = 2
+;format-underline =
+;format-overline =
+;format-spacing =
+;format-padding =
+;format-margin =
+;format-offset =
+
+
+[variables]
+bar-height = 20
+bar-border-size = 0
+
+label-padding = 1
+label-maxlen = 50
+
+eth=enp2s0
+wlan=wlp3s0
+
+
+[section/base]
+format-prefix = %{T2}%{T-}
+format-prefix-foreground = ${colors.brightblack}
+format-prefix-background = ${colors.background}
+
+format-warn-prefix = %{T2}%{T-}
+format-warn-prefix-foreground = ${colors.red}
+format-warn-prefix-background = ${colors.background}
+
+format-connected-prefix = %{T2}%{T-}
+format-connected-prefix-foreground = ${colors.background}
+format-connected-prefix-background = ${colors.brightblack}
+
+format-disconnected-prefix = %{T2}%{T-}
+format-disconnected-prefix-foreground = ${colors.black}
+format-disconnected-prefix-background = ${colors.background}
+
+format-volume-prefix = %{T2}%{T-}
+format-volume-prefix-foreground = ${colors.brightblack}
+format-volume-prefix-background = ${colors.background}
+
+format-muted-prefix = %{T2}%{T-}
+format-muted-prefix-foreground = ${colors.yellow}
+format-muted-prefix-background = ${colors.background}
+
+format-foreground = ${colors.background}
+format-background = ${colors.brightblack}
+
+format-warn-foreground = ${colors.foreground}
+format-warn-background = ${colors.red}
+
+format-connected-foreground = ${colors.background}
+format-connected-background = ${colors.brightblack}
+
+format-disconnected-foreground = ${colors.background}
+format-disconnected-background = ${colors.black}
+
+format-volume-foreground = ${colors.background}
+format-volume-background = ${colors.brightblack}
+
+format-muted-foreground = ${colors.black}
+format-muted-background = ${colors.yellow}
+
+format-suffix = %{T2}%{T-}
+format-suffix-foreground = ${colors.background}
+format-suffix-background = ${colors.brightblack}
+
+format-warn-suffix = %{T2}%{T-}
+format-warn-suffix-foreground = ${colors.background}
+format-warn-suffix-background = ${colors.yellow}
+
+format-connected-suffix = %{T2}%{T-}
+format-connected-suffix-foreground = ${colors.brightblack}
+format-connected-suffix-background = ${colors.background}
+
+format-disconnected-suffix = %{T2}%{T-}
+format-disconnected-suffix-foreground = ${colors.background}
+format-disconnected-suffix-background = ${colors.black}
+
+format-volume-suffix = %{T2}%{T-}
+format-volume-suffix-foreground = ${colors.background}
+format-volume-suffix-background = ${colors.brightblack}
+
+format-muted-suffix = %{T2}%{T-}
+format-muted-suffix-foreground = ${colors.background}
+format-muted-suffix-background = ${colors.yellow}
+
+label-padding = ${variables.label-padding}
+label-warn-padding = ${variables.label-padding}
+label-connected-padding = ${variables.label-padding}
+label-disconnected-padding = ${variables.label-padding}
+label-volume-padding = ${variables.label-padding}
+label-muted-padding = ${variables.label-padding}
+label-charging-padding = ${variables.label-padding}
+label-discharging-padding = ${variables.label-padding}
+label-full-padding = ${variables.label-padding}
+
+[bar/top]
+; Use the following command to list available outputs:
+; $ xrandr -q | grep " connected" | cut -d ' ' -f1
+monitor = "LVDS1"
+bottom = false
+width = 100%
+height = ${variables.bar-height}
+offset-x = 0
+offset-y = 0
+radius = 0
+fixed-center = true
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 0
+line-color = #f00
+
+border-top-size = 0
+border-bottom-size = 0
+border-left-size = 0
+border-right-size = 0
+
+padding-left = 0
+padding-right = 0
+
+module-margin-left = 0
+module-margin-right = 0
+
+font-0 = "Iosevka Nerd Font:Regular:pixelsize=10:antialias=true;1"
+font-1 = "Iosevka Nerd Font:Regular:pixelsize=12:antialias=true;2"
+font-2 = "Iosevka Nerd Font:Regular:pixelsize=10:antialias=true;1"
+
+modules-left = ws_icon i3 lhb wlan lsb mpd_control lhb
+modules-center = 
+modules-right = temperature hdd0 hdd1 cpu memory xbacklight volume date
+
+tray-position = center
+tray-padding = 1
+tray-detached = false
+tray-maxsize = 16
+;tray-transparent = false
+tray-scale = 1.0
+tray-background = ${colors.background}
+tray-foreground = ${colors.foreground}
+tray-offses-x = 0
+tray-offset-y = 0
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+
+[module/ws_icon]
+type = custom/text
+
+content = %{T3} 拓  %{T-}
+content-foreground = ${colors.background}
+content-background = ${colors.brightblack}
+
+
+[module/i3]
+type = internal/i3
+index-sort = true
+wrapping-scroll = true
+strip-wsnumbers = true
+pin-workspaces = true
+fuzzy-match = true
+
+ws-icon-0 = 1;
+ws-icon-1 = 2;
+ws-icon-2 = 3;
+ws-icon-3 = 4;
+ws-icon-4 = 5;
+ws-icon-5 = 6;
+ws-icon-6 = 7;
+ws-icon-7 = 8;
+ws-icon-8 = 9;
+ws-icon-9 = 0;
+
+format-background = ${colors.brightblack}
+format-foreground = ${colors.background}
+
+label-focused-foreground = ${colors.background}
+label-focused-background = ${colors.brightblack}
+
+label-unfocused-foreground = ${colors.black}
+label-unfocused-background = ${colors.brightblack}
+
+label-visible-foreground = ${colors.black}
+label-visible-background = ${colors.brightblack}
+
+label-urgent-foreground = ${colors.red}
+label-urgent-background = ${colors.brightblack}
+
+label-focused = %{T2}%icon% %{T-}
+label-unfocused = %{T2}%icon% %{T-}
+label-visible = %{T2}%icon% %{T-}
+label-urgent = %{T2}%icon% %{T-}
+
+label-mode = %mode%
+label-mode-padding = 2
+label-mode-background = ${colors.brightblack}
+label-mode-foreground = ${colors.red}
+
+
+[module/lhb]
+type = custom/text
+
+content = %{T2}%{T-}
+content-foreground = ${colors.brightblack}
+content-background = ${colors.background}
+
+
+[module/ti_icon]
+type = custom/text
+
+content = %{T3} 类 %{T-}
+content-foreground = ${colors.brightblack}
+content-background = ${colors.background}
+
+[module/lsb]
+type = custom/text
+
+content = %{T2}%{T-}
+content-foreground = ${colors.background}
+content-background = ${colors.brightblack}
+
+
+[module/title]
+type = internal/xwindow
+
+format = <label>
+format-background = ${colors.brightblack}
+format-foreground = ${colors.background}
+format-padding = 1
+
+label = %title%
+label-font = 2
+label-maxlen = 60
+label-empty =
+
+
+
+
+[module/wlan]
+type = internal/network
+inherit = section/base
+interface = ${variables.wlan}
+interval = 1
+accumulate-stats = false
+
+label-font = 2
+label-connected = "%{T3}直%{T-} %{T3}%{T-} %downspeed:% %{T3}%{T-} %upspeed:%"
+label-disconnected = "%{T3}%{F#1D1F21}直%{F- T-}"
+
+
+[module/temperature]
+type = internal/temperature
+inherit = section/base
+hwmon-path = /sys/devices/virtual/thermal/thermal_zone0/hwmon0/temp1_input
+thermal-zone = 0
+warn-temperature = 60
+
+format = <label>
+format-warn = <label-warn>
+label-font = 2
+label = %{T3}%{T-} %temperature-c%
+label-warn = %{T3}%{T-} %temperature-c%
+
+
+[module/hdd0]
+type = custom/script
+inherit = section/base
+interval = 2
+exec = hddtemp /dev/sda | cut -b 33-37
+format = <label>
+label-font = 2
+label =  %output%
+
+
+[module/hdd1]
+type = custom/script
+inherit = section/base
+interval = 2
+exec = hddtemp /dev/sdb | cut -b 33-37
+format = <label>
+label-font = 2
+label =  %output%
+
+
+[module/cpu]
+type = internal/cpu
+inherit = section/base
+interval = 1
+label-font = 2
+label = %{T3}%{T-} %percentage%%
+
+
+[module/memory]
+type = internal/memory
+inherit = section/base
+interval = 3
+label-font = 2
+label = %{T3}%{T-} %gb_used:2%
+
+
+[module/xbacklight]
+type = internal/xbacklight
+inherit = section/base
+
+enable-scroll = false
+
+format = <label>
+label = %{T3}%{T-} %percentage:%%
+
+
+[module/volume]
+type = internal/alsa
+inherit = section/base
+interval = 1
+
+label-font = 2
+label-volume = %{T3}墳%{T-} %percentage:%%
+label-muted = %{T3}婢%{T-}
+
+
+[module/date]
+type = internal/date
+interval = 1
+time = %H:%M %p
+time-alt = %A, %d %B %Y
+
+format-prefix = %{T2}%{T-}
+format-prefix-foreground = ${colors.brightblack}
+format-prefix-background = ${colors.background}
+format-foreground = ${colors.background}
+format-background = ${colors.brightblack}
+
+format-suffix = " "
+
+label-font = 2
+label = %{T3}%{T-} %time%
+
+[module/mpd_control]
+type = internal/mpd
+host = 127.0.0.1
+port = 6006
+format-online = <icon-prev> <icon-repeat> <icon-random> <icon-pause> <icon-play> <icon-next> 
+format-online-font = 2
+format-online-padding = 1
+
+label-offline =  mpd is offline
+label-offline-font = 2
+label-offline-padding = 1
+
+format-offline = <label-offline>
+format-playing = ${self.format-online}
+format-paused = ${self.format-online}
+format-stopped = ${self.format-online}
+
+; Only applies if <icon-X> is used
+icon-play = 
+icon-pause = 
+icon-stop = 
+icon-prev = 
+icon-next = 
+icon-seekb = 
+icon-seekf = 
+icon-random = 
+icon-repeat = 凌
+icon-repeatone = 綾
+icon-single = 綾
+icon-consume = ✀
+
+toggle-on-foreground = ${colors.background}
+toggle-off-foreground = ${colors.black}

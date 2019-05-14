@@ -1,0 +1,182 @@
+{
+    "bracketPairColorizer.activeScopeCSS": [
+        "borderStyle : none",
+        "borderWidth : 0px",
+        "borderColor : {color}; opacity: 0.4"
+    ],
+    "bracketPairColorizer.forceIterationColorCycle": true,
+    "bracketPairColorizer.highlightActiveScope": true,
+    "bracketPairColorizer.rulerPosition": "Full",
+    "bracketPairColorizer.scopeLineCSS": [
+        "borderStyle : solid",
+        "borderWidth : 2px",
+        "borderColor : {color}; opacity: 0.4"
+    ],
+    "bracketPairColorizer.showBracketsInGutter": true,
+    "bracketPairColorizer.showBracketsInRuler": true,
+    "breadcrumbs.enabled": false,
+    "code-runner.executorMap": {
+        "python": "python3"
+    },
+    "editor.fontFamily": "'FuraCode Nerd Font'",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 15,
+    "editor.formatOnPaste": true,
+    "editor.matchBrackets": false,
+    "editor.minimap.enabled": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.renderControlCharacters": true,
+    "editor.renderWhitespace": "all",
+    "editor.snippetSuggestions": "top",
+    "editor.suggestFontSize": 15,
+    "editor.tokenColorCustomizations": {
+        "[Material Theme High Contrast]": {
+            "colors": {
+                "terminal.ansiBlack": "#3a4e56",
+                "terminal.ansiBlue": "#4877b1",
+                "terminal.ansiBrightBlack": "#556064",
+                "terminal.ansiBrightBlue": "#8ca9bf",
+                "terminal.ansiBrightCyan": "#73c5e2",
+                "terminal.ansiBrightGreen": "#add488",
+                "terminal.ansiBrightMagenta": "#e2afec",
+                "terminal.ansiBrightRed": "#e16f7e",
+                "terminal.ansiBrightWhite": "#fcfcfc",
+                "terminal.ansiBrightYellow": "#fdc35f",
+                "terminal.ansiCyan": "#00bcd4",
+                "terminal.ansiGreen": "#5ca75b",
+                "terminal.ansiMagenta": "#a660c3",
+                "terminal.ansiRed": "#e14245",
+                "terminal.ansiWhite": "#a9a9aa",
+                "terminal.ansiYellow": "#f6ab32"
+            }
+        }
+    },
+    "editor.wordWrap": "off",
+    "explorer.confirmDragAndDrop": false,
+    "extensions.autoUpdate": false,
+    "files.exclude": {
+        "**/.DS_Store": true,
+        "**/.git": true,
+        "**/.hg": true,
+        "**/.svn": true,
+        "**/.vscode": true,
+        "**/CVS": true,
+        "**/__pycache__": true
+    },
+    "git.autofetch": true,
+    "gitlens.advanced.git": "/usr/bin/git",
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false,
+        "suppressShowKeyBindingsNotice": true
+    },
+    "gitlens.historyExplorer.enabled": true,
+    "gitlens.menus": {
+        "editor": {
+            "blame": true,
+            "clipboard": true,
+            "compare": true,
+            "details": true,
+            "history": true,
+            "remote": true
+        },
+        "editorGroup": {
+            "blame": true,
+            "compare": true,
+            "history": true,
+            "remote": true
+        },
+        "editorTab": {
+            "compare": true,
+            "history": true,
+            "remote": true
+        },
+        "explorer": {
+            "compare": true,
+            "history": true,
+            "remote": true
+        }
+    },
+    "gitlens.settings.mode": "advanced",
+    "material-icon-theme.folders.color": "#90a4ae",
+    "material-icon-theme.folders.theme": "specific",
+    "materialTheme.fixIconsRunning": true,
+    "python.autoComplete.addBrackets": true,
+    "python.autoComplete.extraPaths": [
+        "/home/dani/.django/lib/python3.7/site-packages"
+    ],
+    "python.linting.pylintArgs": [
+        "--ignore E0302"
+    ],
+    "python.pythonPath": "/usr/bin/python3",
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "terminal.external.linuxExec": "termite",
+    "terminal.integrated.cursorStyle": "underline",
+    "terminal.integrated.fontFamily": "'SauceCodePro Nerd Font Mono'",
+    "terminal.integrated.fontSize": 15,
+    "terminal.integrated.rendererType": "dom",
+    "window.menuBarVisibility": "toggle",
+    "window.restoreWindows": "none",
+    "window.title": "${dirty}${activeEditorShort}${separator}${rootName}",
+    "window.zoomLevel": -0.4,
+    "workbench.activityBar.visible": false,
+    "workbench.colorTheme": "Ayu Dark",
+    "workbench.iconTheme": "ayu",
+    "workbench.sideBar.location": "left",
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.statusBar.feedback.visible": false,
+    "workbench.statusBar.visible": true,
+    "gitlens.recentChanges.highlight.locations": [
+        "gutter",
+        "overview",
+        "line"
+    ],
+    "gitlens.blame.highlight.locations": [
+        "gutter",
+        "line",
+        "overview"
+    ],
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.codeLens.scopes": [
+        "document",
+        "containers"
+    ],
+    "window.enableMenuBarMnemonics": false,
+    "vim.easymotion": true,
+    "vim.sneak": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.leader": "<space>",
+    "vim.overrideCopy": true,
+    "vim.visualModeKeyBindingsNonRecursive": [{
+            "before": [
+                ">"
+            ],
+            "commands": [
+                "editor.action.indentLines"
+            ]
+        },
+        {
+            "before": [
+                "<"
+            ],
+            "commands": [
+                "editor.action.outdentLines"
+            ]
+        },
+    ],
+    "vim.enableNeovim": true,
+    "vim.neovimPath": "/usr/bin/nvim",
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.scrollbar.vertical": "hidden",
+    "editor.scrollbar.verticalScrollbarSize": 0,
+    "editor.overviewRulerBorder": false
+}

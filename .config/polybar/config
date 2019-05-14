@@ -1,0 +1,452 @@
+; vim:ft=dosini
+;==========================================================
+;
+;   To learn more about how to configure Polybar
+;   go to https://github.com/jaagr/polybar
+;
+;   The README contains alot of information
+;
+;==========================================================
+
+[colors]
+background      = ${xrdb:background}
+foreground      = ${xrdb:foreground}
+
+background-alt  = #00282828
+
+black           = ${xrdb:color0}
+brightblack     = ${xrdb:color8}
+
+red             = ${xrdb:color1}
+brightred       = ${xrdb:color9}
+red-alt         = #c67d6f
+
+green           = ${xrdb:color2}
+brightgreen     = ${xrdb:color10}
+
+yellow          = ${xrdb:color3}
+brightyellow    = ${xrdb:color11}
+
+blue            = ${xrdb:color4}
+brightblue      = ${xrdb:color12}
+
+mangenta        = ${xrdb:color5}
+brightmangenta  = ${xrdb:color13}
+
+cyan            = ${xrdb:color6}
+brightcyan      = ${xrdb:color14}
+
+white           = ${xrdb:color7}
+brightwhite     = ${xrdb:color15}
+
+
+;==========================================================
+
+[assets]
+font-0 = "Iosevka Nerd Font:size=10;2:Light"
+font-1 = "Iosevka Nerd Font:size=10:weight=bold;2"
+font-2 = "Material Icons:size=13;4"
+hwmon-path = /sys/devices/virtual/thermal/thermal_zone0/hwmon0/temp1_input
+monitor = ${env:MONITOR:LVDS-1}
+mpd-host = 127.0.0.1
+mpd-port = 6600
+wlan=${env:WLAN}
+
+
+;==========================================================
+
+
+[settings]
+screenchange-reload = true
+
+
+;==========================================================
+
+
+[global/wm]
+margin-top = 0
+margin-bottom = 0
+
+
+;==========================================================
+
+
+[bar/main]
+monitor = ${assets.monitor}
+width = 100%
+height = 18
+bottom = true
+fixed-center = true
+
+background = ${colors.background}
+foreground = ${colors.brightwhite}
+
+border-color = ${colors.background}
+border-top-size = 2
+border-bottom-size = 2
+border-left-size = 0
+border-right-size = 0
+
+font-0 = ${assets.font-0}
+font-1 = ${assets.font-1}
+font-2 = ${assets.font-2}
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+tray-position = right
+tray-padding = 0
+tray-maxsize = 16
+tray-offset-x = 0
+tray-offset-y = 0
+tray-scale = 1.0
+
+modules-left = jgmenu i3 mpd
+modules-right = wlan network right temperature hdd0 hdd1 right memory cpu right backlight right volume right date right session
+module-margin = 0
+module-padding = 0
+
+wm-restack = i3wm
+override-redirect = false
+
+;== Modules ===============================================
+
+[module/left]
+type = custom/text
+content = ❱
+
+content-font = 1
+content-padding = 1
+content-foreground = ${colors.brightwhite}
+
+
+;----------------------------------------------------------
+
+
+[module/right]
+type = custom/text
+content = ❰
+
+content-font = 1
+content-padding = 1
+content-foreground = ${colors.brightwhite}
+
+
+;----------------------------------------------------------
+
+
+[module/jgmenu]
+type = custom/text
+content = 
+
+click-left = rofi -show drun
+
+content-font = 1
+content-padding = 1
+content-foreground = ${colors.brightwhite}
+
+
+;----------------------------------------------------------
+
+
+[module/session]
+type = custom/script
+interval = 60
+exec = getent passwd `whoami` | cut -d : -f 5
+click-left = "~/.config/polybar/script/session.sh"
+
+format = %{T2}<label>%{T-}
+format-font = 1
+format-foreground = ${colors.brightwhite}
+format-padding = 1
+format-prefix = " "
+
+;----------------------------------------------------------
+
+
+[module/hdd0]
+type = custom/script
+interval = 1
+exec = hddtemp /dev/sda | cut -b 33-37
+
+format = <label>
+format-font = 1
+format-foreground = ${colors.brightwhite}
+format-padding = 1
+format-prefix = " "
+
+
+;----------------------------------------------------------
+
+[module/hdd1]
+type = custom/script
+interval = 1
+exec = hddtemp /dev/sdb | cut -b 33-37
+
+format = <label>
+format-font = 1
+format-foreground = ${colors.brightwhite}
+format-padding = 1
+format-prefix = " "
+
+
+;----------------------------------------------------------
+
+
+[module/i3]
+type = internal/i3
+pin-workspaces = false
+strip-wsnumbers = false
+index-sort = true
+enable-click = true
+enable-scroll = false
+wrapping-scroll = false
+reverse-scroll = false
+fuzzy-match = false
+
+ws-icon-0 = 1;
+ws-icon-1 = 2; 
+ws-icon-2 = 3; 
+ws-icon-3 = 4; 
+ws-icon-4 = 5; 
+ws-icon-5 = 6; 
+ws-icon-6 = 7; 
+ws-icon-7 = 8; 
+ws-icon-8 = 9; 
+ws-icon-9 = 10; 
+ws-icon-default = 
+
+format = <label-state>
+
+label-font = 2
+
+label-focused = %name%
+label-focused-background = ${colors.brightwhite}
+label-focused-foreground = ${colors.brightblack}
+label-focused-padding = 1
+
+label-mode = %name%
+
+label-unfocused = %name%
+label-unfocused-foreground = ${colors.brightwhite}
+label-unfocused-padding = 1
+
+label-urgent = %name%
+
+label-visible = %name%
+label-visible-foreground = ${colors.brightwhite}
+
+
+;----------------------------------------------------------
+
+
+[module/mpd]
+type = internal/mpd
+host = ${assets.mpd-host}
+port = ${assets.mpd-port}
+
+format-online = %{T3}<icon-prev> <icon-pause> <icon-play> <icon-next>%{T-} %{A1:st -e ncmpcpp:}<label-song>%{A}
+format-online-padding = 1
+format-online-foreground = ${colors.brightwhite}
+
+format-offline = <label-offline>
+label-offline = 🎜 mpd is offline
+
+label-font = 1
+
+label-song =  %title%
+label-song-maxlen = 25
+label-song-ellipsis = true
+
+icon-play = 
+icon-pause = 
+icon-stop = 
+icon-prev = 
+icon-next = 
+icon-seekb = 
+icon-seekf = 
+icon-random = 
+icon-repeat = 
+icon-repeatone = 
+icon-single = 
+icon-consume = ✀
+
+
+;----------------------------------------------------------
+
+
+[module/network]
+type = internal/network
+interface = ${assets.wlan}
+interval = 1
+udspeed-minwidth = 2
+accumulate-stats = true
+unknown-as-up = true
+
+format-connected = <label-connected>
+format-connected-foreground = ${colors.brightwhite}
+format-connected-padding = 1
+format-connected-prefix =" "
+
+format-disconnected = <label-disconnected>
+format-disconnected-foreground = ${colors.brightwhite}
+format-disconnected-padding = 1
+format-disconnected-prefix =" "
+
+label-font = 1
+
+label-connected = "%downspeed:% %upspeed:%"
+label-disconnected = " -- KB/s  -- KB/s"
+
+
+;----------------------------------------------------------
+
+
+[module/wlan]
+type = internal/network
+interface = ${assets.wlan}
+interval = 1
+udspeed-minwidth = 2
+accumulate-stats = true
+unknown-as-up = true
+
+format-connected = %{A1:connman-gtk:}<label-connected>%{A}
+format-connected-foreground = ${colors.brightwhite}
+format-connected-padding = 1
+format-connected-prefix =" "
+
+format-disconnected = %{A1:connman-gtk:}<label-disconnected>%{A}
+format-disconnected-foreground = ${colors.brightwhite}
+format-disconnected-padding = 1
+format-disconnected-prefix =" "
+
+label-font = 1
+
+label-connected = %essid%
+label-connected-maxlen = 15
+
+label-disconnected = offline
+
+
+;----------------------------------------------------------
+
+
+[module/temperature]
+type = internal/temperature
+interval = 1
+thermal-zone = 0
+hwmon-path = ${assets.hwmon-path}
+warn-temperature = 60
+units = true
+
+format = <label>
+format-foreground = ${colors.brightwhite}
+format-padding = 1
+format-prefix = " "
+
+format-warn = <label-warn>
+format-warn-background = ${colors.red}
+format-warn-padding = 1
+format-warn-prefix = " "
+
+label-font = 1
+
+label = %temperature-c%
+label-warn = %temperature-c%
+
+
+;----------------------------------------------------------
+
+
+[module/cpu]
+type = internal/cpu
+interval = 1
+
+format = <label>
+format-foreground = ${colors.brightwhite}
+format-padding = 1
+
+format-prefix = ""
+
+format-suffix = "%"
+
+label-font = 1
+label-padding = 1
+label = %percentage:2:2%
+
+
+;----------------------------------------------------------
+
+
+[module/memory]
+type = internal/memory
+interval = 1
+
+format = <label>
+format-foreground = ${colors.brightwhite}
+format-padding = 1
+format-prefix = "﬙"
+
+label = %gb_used%
+label-font = 1
+label-padding = 1
+
+
+;----------------------------------------------------------
+
+
+[module/backlight]
+type = internal/xbacklight
+output = ${assets.monitor}
+enable-scroll = false
+
+format = <label>
+format-foreground = ${colors.brightwhite}
+format-padding = 1
+format-prefix = ""
+format-suffix = "%"
+
+label-font = 1
+label = %percentage:3:2%
+
+
+;----------------------------------------------------------
+
+
+[module/volume]
+type = internal/pulseaudio
+master-mixer = Master
+mapped = true
+interval = 5
+
+format-muted = %{A3:st -e pulsemixer:}<label-muted>%{A}
+format-muted-foreground = ${colors.brightwhite}
+format-muted-padding = 1
+format-muted-prefix = ""
+
+format-volume = %{A3:st -e pulsemixer:}<label-volume>%{A}
+format-volume-foreground = ${colors.brightwhite}
+format-volume-padding = 1
+format-volume-prefix = ""
+format-volume-suffix = "%"
+
+label-font = 1
+label-muted = " muted"
+label-padding = 1
+label-volume = %percentage:3:3%
+
+
+;----------------------------------------------------------
+
+
+[module/date]
+type = internal/date
+interval = 30
+
+format-foreground = ${colors.brightwhite}
+format-padding = 1
+
+label =  %{T1}%time%%{T-}
+time =  %H:%M %p
+time-alt =  %A,%d-%m-%y
+;==========================================================

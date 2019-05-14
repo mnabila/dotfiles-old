@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="395"
+   height="472"
+   viewBox="0 0 395 472.00001"
+   id="svg6439"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="template.svg"
+   inkscape:export-filename="/home/mirza/Desktop/conky/background.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs6441">
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient8591"
+       id="linearGradient5014"
+       x1="881.71228"
+       y1="766.88367"
+       x2="872.19843"
+       y2="783.36218"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-699.39956,165.02916)" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient8591">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop8593" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop8595" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient8591"
+       id="linearGradient8597"
+       x1="934.02301"
+       y1="695.71674"
+       x2="923.82861"
+       y2="713.3739"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-749.61984,164.24546)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient8591"
+       id="linearGradient8605"
+       x1="1058.165"
+       y1="619.36218"
+       x2="1045.7188"
+       y2="640.9198"
+       gradientUnits="userSpaceOnUse" />
+    <mask
+       maskUnits="userSpaceOnUse"
+       id="mask7683-5">
+      <rect
+         style="opacity:1;fill:#43a047;fill-opacity:1;stroke:none;stroke-width:2.27200007;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect7685-6"
+         width="60"
+         height="60"
+         x="1040.165"
+         y="577.36218" />
+    </mask>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter5920"
+       x="-0.020612735"
+       width="1.0412256"
+       y="-0.14200795"
+       height="1.2840159">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="2.3667991"
+         id="feGaussianBlur5922" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter7715"
+       x="-0.020634146"
+       width="1.0412683"
+       y="-0.141"
+       height="1.2819999">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="3.525"
+         id="feGaussianBlur7717" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter8926"
+       x="-0.022"
+       width="1.044"
+       y="-0.098999999"
+       height="1.198">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="2.0625"
+         id="feGaussianBlur8928" />
+    </filter>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4903">
+      <rect
+         y="340.07736"
+         x="812.67523"
+         height="640.48639"
+         width="97.835861"
+         id="rect4905"
+         style="display:inline;opacity:1;fill:#494276;fill-opacity:1;stroke:none;stroke-width:2.27200007;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </clipPath>
+    <filter
+       height="1.0878842"
+       y="-0.043942101"
+       width="1.8843411"
+       x="-0.44217053"
+       id="filter5419"
+       style="color-interpolation-filters:sRGB"
+       inkscape:collect="always">
+      <feGaussianBlur
+         id="feGaussianBlur5421"
+         stdDeviation="9.8598072"
+         inkscape:collect="always" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.74917518"
+     inkscape:cx="186.35868"
+     inkscape:cy="89.019077"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:snap-page="true"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1280"
+     inkscape:window-height="772"
+     inkscape:window-x="0"
+     inkscape:window-y="28"
+     inkscape:window-maximized="1">
+    <sodipodi:guide
+       position="0,357.40341"
+       orientation="1,0"
+       id="guide7169" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata6444">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-580.36213)">
+    <rect
+       transform="matrix(1.2928982,0,0,0.80608464,-1050.1086,290.38335)"
+       y="383.104"
+       x="759.15839"
+       height="538.5163"
+       width="53.516766"
+       id="rect5271"
+       style="display:inline;opacity:0.5;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.27200007;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter5419)"
+       clip-path="url(#clipPath4903)"
+       inkscape:export-filename="/home/mirza/Desktop/conky/background.png"
+       inkscape:export-xdpi="89.954384"
+       inkscape:export-ydpi="89.954384" />
+    <path
+       inkscape:connector-curvature="0"
+       style="display:inline;opacity:0.25;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter8926)"
+       d="m 0.59696632,897.60762 0,50 214.94726368,0 0,-50 -214.94726368,0 z"
+       id="rect4243"
+       inkscape:export-filename="/home/mirza/Desktop/conky/background.png"
+       inkscape:export-xdpi="89.954384"
+       inkscape:export-ydpi="89.954384" />
+    <path
+       inkscape:connector-curvature="0"
+       style="display:inline;opacity:0.25;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter8926)"
+       d="m 0.59696632,827.60762 0,50 214.94726368,0 0,-50 -214.94726368,0 z"
+       id="rect8916"
+       inkscape:export-filename="/home/mirza/Desktop/conky/background.png"
+       inkscape:export-xdpi="89.954384"
+       inkscape:export-ydpi="89.954384" />
+    <rect
+       style="display:inline;opacity:1;fill:#fafafa;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect8371"
+       width="214.94748"
+       height="50"
+       x="0.59768081"
+       y="821.60767"
+       inkscape:export-filename="/home/mirza/Desktop/conky/background.png"
+       inkscape:export-xdpi="89.954384"
+       inkscape:export-ydpi="89.954384" />
+    <path
+       inkscape:connector-curvature="0"
+       style="display:inline;opacity:0.25;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.27200007;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter7715)"
+       d="m 0.59696632,747.60762 0,60 379.94727368,0 0,-60 -379.94727368,0 z"
+       id="rect7701"
+       inkscape:export-filename="/home/mirza/Desktop/conky/background.png"
+       inkscape:export-xdpi="89.954384"
+       inkscape:export-ydpi="89.954384" />
+    <path
+       inkscape:connector-curvature="0"
+       style="display:inline;opacity:0.25;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.27200007;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter5920)"
+       d="m 0.59696632,685.60762 0,40 265.52148368,0 0,-40 -265.52148368,0 z"
+       id="rect5910"
+       inkscape:export-filename="/home/mirza/Desktop/conky/background.png"
+       inkscape:export-xdpi="89.954384"
+       inkscape:export-ydpi="89.954384" />
+    <rect
+       style="display:inline;opacity:1;fill:#0288d1;fill-opacity:1;stroke:none;stroke-width:2.27200007;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect5387"
+       width="265.52069"
+       height="40"
+       x="0.59768081"
+       y="681.60767"
+       inkscape:export-filename="/home/mirza/Desktop/conky/background.png"
+       inkscape:export-xdpi="89.954384"
+       inkscape:export-ydpi="89.954384" />
+    <rect
+       y="892.65765"
+       x="0.59768081"
+       height="50"
+       width="214.94748"
+       id="rect4245"
+       style="display:inline;opacity:1;fill:#fafafa;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-filename="/home/mirza/Desktop/conky/background.png"
+       inkscape:export-xdpi="89.954384"
+       inkscape:export-ydpi="89.954384" />
+    <rect
+       y="741.60767"
+       x="0.59768081"
+       height="60"
+       width="379.94748"
+       id="rect5345"
+       style="display:inline;opacity:1;fill:#fafafa;fill-opacity:1;stroke:none;stroke-width:2.27200007;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-filename="/home/mirza/Desktop/conky/background.png"
+       inkscape:export-xdpi="89.954384"
+       inkscape:export-ydpi="89.954384" />
+    <rect
+       y="681.50061"
+       x="148.14995"
+       height="40"
+       width="117.96841"
+       id="rect6069"
+       style="display:inline;opacity:1;fill:#039be5;fill-opacity:1;stroke:none;stroke-width:2.27200007;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-filename="/home/mirza/Desktop/conky/background.png"
+       inkscape:export-xdpi="89.954384"
+       inkscape:export-ydpi="89.954384" />
+    <rect
+       y="741.20789"
+       x="320.5452"
+       height="60.799999"
+       width="60.200001"
+       id="rect6768"
+       style="display:inline;opacity:1;fill:#4caf50;fill-opacity:1;stroke:none;stroke-width:2.27200007;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-filename="/home/mirza/Desktop/conky/background.png"
+       inkscape:export-xdpi="89.954384"
+       inkscape:export-ydpi="89.954384" />
+    <path
+       id="path7676"
+       style="display:inline;opacity:0.1;fill:url(#linearGradient8605);fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 1067.4426,644.86218 -34.7776,0 0,-5.33277 25.5,-44.16723 6,3.4641 2,-3.4641 16,6 -1.7321,3 1.7321,6 -1.7321,3 1.7321,6 -14.7224,25.5"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccccccccc"
+       mask="url(#mask7683-5)"
+       transform="translate(-719.61984,164.24546)"
+       inkscape:export-filename="/home/mirza/Desktop/conky/background.png"
+       inkscape:export-xdpi="89.954384"
+       inkscape:export-ydpi="89.954384" />
+    <path
+       d="m 346.54514,765.60764 16,0 0,-6 -16,0 z m 0,9 16,0 0,-6 -16,0 z m 0,9 16,0 0,-6 -16,0 z m -8,-18 6,0 0,-6 -6,0 z m 0,9 6,0 0,-6 -6,0 z m 0,9 6,0 0,-6 -6,0 z"
+       style="display:inline;opacity:1;fill:#fafafa;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4162"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/mirza/Desktop/conky/background.png"
+       inkscape:export-xdpi="89.954384"
+       inkscape:export-ydpi="89.954384" />
+    <rect
+       style="display:inline;opacity:1;fill:#e6e6e6;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect7727"
+       width="205"
+       height="10"
+       x="16.982689"
+       y="776.23657"
+       inkscape:export-filename="/home/mirza/Desktop/conky/background.png"
+       inkscape:export-xdpi="89.954384"
+       inkscape:export-ydpi="89.954384" />
+    <rect
+       style="display:inline;opacity:1;fill:#e53935;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect8373"
+       width="50.200001"
+       height="50.799999"
+       x="165.54509"
+       y="821.20789"
+       inkscape:export-filename="/home/mirza/Desktop/conky/background.png"
+       inkscape:export-xdpi="89.954384"
+       inkscape:export-ydpi="89.954384" />
+    <path
+       id="path8540"
+       style="display:inline;opacity:0.1;fill:url(#linearGradient8597);fill-opacity:1;stroke:none;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 165.54515,871.60764 0,-8.67515 13,-22.51666 1.94577,0.88281 3.86305,-6.69101 1.94577,1.94577 -0.94828,1.64247 1.18382,-0.0137 2.06378,-3.57458 3.89154,1.94577 -0.90383,1.56548 1.13059,0.0807 2.07381,-3.59194 1.94576,1.94577 -1.01514,1.75829 3.22665,4.96422 1.65094,-2.8595 1.94577,1.94577 -1.32752,2.29932 1.32752,3.89154 -1.32824,2.30057 1.32824,1.94577 -10.85896,18.80826"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccccccccccccccccc"
+       inkscape:export-filename="/home/mirza/Desktop/conky/background.png"
+       inkscape:export-xdpi="89.954384"
+       inkscape:export-ydpi="89.954384" />
+    <g
+       style="display:inline"
+       id="g8497"
+       transform="translate(-749.61984,164.24546)"
+       inkscape:export-filename="/home/mirza/Desktop/conky/background.png"
+       inkscape:export-xdpi="89.954384"
+       inkscape:export-ydpi="89.954384">
+      <rect
+         ry="0.34325579"
+         rx="0.34325576"
+         y="675.49707"
+         x="933.29987"
+         height="13.730231"
+         width="13.73023"
+         id="rect4196"
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#fafafa;stroke-width:3.2952559;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <g
+         style="fill:#fafafa;fill-opacity:1"
+         transform="matrix(0.48644244,0,0,0.48644245,315.60475,638.98631)"
+         id="g4248">
+        <rect
+           style="opacity:1;fill:#fafafa;fill-opacity:1;stroke:none;stroke-width:8;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect4208"
+           width="4.0000005"
+           height="4.0000005"
+           x="1271.207"
+           y="64.500671" />
+        <rect
+           y="64.500671"
+           x="1292.6632"
+           height="4.0000005"
+           width="4.0000005"
+           id="rect4210"
+           style="opacity:1;fill:#fafafa;fill-opacity:1;stroke:none;stroke-width:8;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        <rect
+           y="64.500671"
+           x="1279.9338"
+           height="4.0000005"
+           width="8.000001"
+           id="rect4214"
+           style="opacity:1;fill:#fafafa;fill-opacity:1;stroke:none;stroke-width:8;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      </g>
+      <g
+         style="fill:#fafafa;fill-opacity:1"
+         transform="matrix(0.48644244,0,0,0.48644245,315.60414,661.04056)"
+         id="g4253">
+        <rect
+           y="64.500671"
+           x="1271.207"
+           height="4.0000005"
+           width="4.0000005"
+           id="rect4255"
+           style="opacity:1;fill:#fafafa;fill-opacity:1;stroke:none;stroke-width:8;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        <rect
+           style="opacity:1;fill:#fafafa;fill-opacity:1;stroke:none;stroke-width:8;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect4257"
+           width="4.0000005"
+           height="4.0000005"
+           x="1292.6632"
+           y="64.500671" />
+        <rect
+           style="opacity:1;fill:#fafafa;fill-opacity:1;stroke:none;stroke-width:8;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect4259"
+           width="8.000001"
+           height="4.0000005"
+           x="1279.9338"
+           y="64.500671" />
+      </g>
+      <g
+         style="fill:#fafafa;fill-opacity:1"
+         transform="matrix(0,0.48644245,-0.48644242,0,983.54084,57.801889)"
+         id="g4261">
+        <rect
+           y="64.500671"
+           x="1271.207"
+           height="4.0000005"
+           width="4.0000005"
+           id="rect4263"
+           style="opacity:1;fill:#fafafa;fill-opacity:1;stroke:none;stroke-width:8;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        <rect
+           style="opacity:1;fill:#fafafa;fill-opacity:1;stroke:none;stroke-width:8;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect4265"
+           width="4.0000005"
+           height="4.0000005"
+           x="1292.6632"
+           y="64.500671" />
+        <rect
+           style="opacity:1;fill:#fafafa;fill-opacity:1;stroke:none;stroke-width:8;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect4267"
+           width="8.000001"
+           height="4.0000005"
+           x="1279.9338"
+           y="64.500671" />
+      </g>
+      <g
+         style="fill:#fafafa;fill-opacity:1"
+         id="g4269"
+         transform="matrix(0,0.48644245,-0.48644242,0,961.48661,57.801305)">
+        <rect
+           style="opacity:1;fill:#fafafa;fill-opacity:1;stroke:none;stroke-width:8;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect4271"
+           width="4.0000005"
+           height="4.0000005"
+           x="1271.207"
+           y="64.500671" />
+        <rect
+           y="64.500671"
+           x="1292.6632"
+           height="4.0000005"
+           width="4.0000005"
+           id="rect4273"
+           style="opacity:1;fill:#fafafa;fill-opacity:1;stroke:none;stroke-width:8;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        <rect
+           y="64.500671"
+           x="1279.9338"
+           height="4.0000005"
+           width="8.000001"
+           id="rect4275"
+           style="opacity:1;fill:#fafafa;fill-opacity:1;stroke:none;stroke-width:8;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      </g>
+    </g>
+    <rect
+       y="892.25787"
+       x="165.54509"
+       height="50.799999"
+       width="50.200001"
+       id="rect4247"
+       style="display:inline;opacity:1;fill:#fb8c00;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-filename="/home/mirza/Desktop/conky/background.png"
+       inkscape:export-xdpi="89.954384"
+       inkscape:export-ydpi="89.954384" />
+    <path
+       id="path5005"
+       style="display:inline;opacity:0.1;fill:url(#linearGradient5014);fill-opacity:1;stroke:none;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 165.76543,942.39134 0,-2.11767 19.98559,-34.61605 3.51476,6.34741 2.5182,-4.36164 4.86287,1.86927 -1.01341,1.75527 3.1833,2.13778 -1.13024,1.95762 1.22398,2.06929 -14.40992,24.95872"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccccc"
+       inkscape:export-filename="/home/mirza/Desktop/conky/background.png"
+       inkscape:export-xdpi="89.954384"
+       inkscape:export-ydpi="89.954384" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4288"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32.5px;line-height:69.99999881%;font-family:Roboto;-inkscape-font-specification:'Roboto Light';letter-spacing:0px;word-spacing:0px;display:inline;fill:#333333;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(-832.60817,576.27105)"
+       inkscape:export-filename="/home/mirza/Desktop/conky/background.png"
+       inkscape:export-xdpi="89.954384"
+       inkscape:export-ydpi="89.954384"><flowRegion
+         id="flowRegion4290"><rect
+           id="rect4292"
+           width="129.42171"
+           height="113.24399"
+           x="927.69073"
+           y="333.87967"
+           style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32.5px;font-family:Roboto;-inkscape-font-specification:'Roboto Light';fill:#333333;fill-opacity:1" /></flowRegion><flowPara
+         id="flowPara4294">45°</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4296"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;line-height:69.99999881%;font-family:Roboto;-inkscape-font-specification:Roboto;letter-spacing:0px;word-spacing:0px;display:inline;fill:#9e9e9e;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(-849.52932,578.43308)"
+       inkscape:export-filename="/home/mirza/Desktop/conky/background.png"
+       inkscape:export-xdpi="89.954384"
+       inkscape:export-ydpi="89.954384"><flowRegion
+         id="flowRegion4298"><rect
+           id="rect4300"
+           width="71.493431"
+           height="41.290325"
+           x="886.21265"
+           y="341.60095"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:Roboto;-inkscape-font-specification:Roboto;fill:#9e9e9e;fill-opacity:1" /></flowRegion><flowPara
+         id="flowPara4302">62° 32°</flowPara></flowRoot>    <path
+       id="rect4358"
+       style="display:inline;opacity:1;fill:#fafafa;fill-opacity:1;stroke:none;stroke-width:8;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 192.05787,915.62961 6.20385,0 c 0.35941,0 0.64876,0.28935 0.64876,0.64877 l 0,0.9326 c 0,0.35942 -0.28935,0.64877 -0.64876,0.64877 l -6.20385,0 c -0.35942,0 -0.64877,-0.28935 -0.64877,-0.64877 l 0,-0.9326 c 0,-0.35942 0.28935,-0.64877 0.64877,-0.64877 z m 0,-4.0954 6.20385,0 c 0.35941,0 0.64876,0.28935 0.64876,0.64877 l 0,0.9326 c 0,0.35942 -0.28935,0.64877 -0.64876,0.64877 l -6.20385,0 c -0.35942,0 -0.64877,-0.28935 -0.64877,-0.64877 l 0,-0.9326 c 0,-0.35942 0.28935,-0.64877 0.64877,-0.64877 z m 0,-3.85205 3.9737,0 c 0.35942,0 0.64877,0.28935 0.64877,0.64877 l 0,0.9326 c 0,0.35942 -0.28935,0.64877 -0.64877,0.64877 l -3.9737,0 c -0.35942,0 -0.64877,-0.28935 -0.64877,-0.64877 l 0,-0.9326 c 0,-0.35942 0.28935,-0.64877 0.64877,-0.64877 z m -6.00238,-2.02454 2.34125,0 c 0.35941,0 0.64876,0.28935 0.64876,0.64877 l 0,13.95585 c 0,0.35942 -0.28935,0.64877 -0.64876,0.64877 l -2.34125,0 c -0.35942,0 -0.64877,-0.28935 -0.64877,-0.64877 l 0,-13.95585 c 0,-0.35942 0.28935,-0.64877 0.64877,-0.64877 z m 6.2168,18.9538 a 5.0462327,5.0462327 0 0 1 -5.04623,5.04623 5.0462327,5.0462327 0 0 1 -5.04624,-5.04623 5.0462327,5.0462327 0 0 1 5.04624,-5.04623 5.0462327,5.0462327 0 0 1 5.04623,5.04623 z"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/mirza/Desktop/conky/background.png"
+       inkscape:export-xdpi="89.954384"
+       inkscape:export-ydpi="89.954384" />
+  </g>
+</svg>

@@ -1,0 +1,36 @@
+!!   Adapta color scheme
+*.foreground:           #d3dae3
+!*.background:           #263238
+*.background:           #131c26
+
+!black and bright black
+*.color0:               #3a4e56
+*.color8:               #556064
+
+!red and bright red
+*.color1:               #e14245
+*.color9:               #e16f7e
+
+! green and bright green
+*.color2:               #5ca75b
+*.color10:              #add488
+
+! yellow and bright yellow
+*.color3:               #f6ab32
+*.color11:              #fdc35f
+
+! blue and bright blue
+*.color4:               #4877b1
+*.color12:              #8ca9bf
+
+! mangenta and bright mangenta
+*.color5:               #a660c3
+*.color13:              #e2afec
+
+! cyan and bright cyan
+*.color6:               #00bcd4
+*.color14:              #73c5e2
+
+! white and bright white
+*.color7:               #a9a9aa
+*.color15:              #fcfcfc

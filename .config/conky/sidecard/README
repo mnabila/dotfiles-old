@@ -1,0 +1,28 @@
+
+	Features 
+	- Simple, flat colored, material design inspired. Best coupled with simple or object focused wallpapers.
+	- Hour and minute time.
+	- RAM usage with percent amount and bar.
+	- CPU usage in percent and current CPU clock.
+	- ACPI temperature.
+	
+	Installing
+	Needed conky version : 1.10 or up. (lua based conky script)
+	Needed font : Roboto and Roboto Light.
+	Edit alignment, gap_x and gap_y if needed.
+	Place .conkyrc and .conky-rc from the zip archive to your home folder (ex: /home/anisa)
+	Run conky from lancher or terminal.
+
+	Modding
+	color1 is for small text.
+	color2 is for big light text.
+	color3 is for bar color.
+	color4 is for bar overlay color, same as bar background color, so the bar is appear borderless.
+
+	Original .svg design from Inkscape are included, you can modify the background from that file, then export as .png with 395x472 size.
+
+
+
+
+	Enjoy!
+	mzpsh

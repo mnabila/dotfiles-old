@@ -1,0 +1,17 @@
+#!/bin/bash
+
+gxmessage "Are you sure you want to shut down your computer?" \
+    -center -title "Take action" \
+    -font "Sans bold 10" \
+    -default "Cancel" \
+    -buttons "_Cancel":1,"_Log out":2,"_Suspend":3,"_Hibernate":4,"_Reboot":5,"Power Off":6 \
+    >/dev/null
+
+case $? in
+    1) echo "Exit";;
+    2) openbox --exit;;
+    3) gksu systemctl suspend;;
+    4) gksu systemctl hibernate;;
+    5) gksu systemctl reboot;;
+    6) gksu systemctl poweroff;;
+esac

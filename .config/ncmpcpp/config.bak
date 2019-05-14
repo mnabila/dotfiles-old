@@ -1,0 +1,70 @@
+# system encoding 
+system_encoding = "utf-8"
+
+# mpd server
+mpd_host = "localhost"
+mpd_port = "8012"
+mpd_connection_timeout = "5"
+mpd_crossfade_time = "5"
+
+# music
+mpd_music_dir = "~/Music"
+allow_for_physical_item_deletion = "no"
+
+# lyric
+lyrics_directory  = ~/.ncmpcpp/lyrics
+store_lyrics_in_song_dir = "yes"
+follow_now_playing_lyrics = "yes"
+
+# ncmpcpp directory
+ncmpcpp_directory  = ~/.ncmpcpp
+
+# mouse support
+mouse_support = "no"
+lines_scrolled = "1"
+mouse_list_scroll_whole_page = "yes"
+centered_cursor = "yes"
+
+# visualizer
+visualizer_fifo_path = "/tmp/mpd.fifo"
+visualizer_output_name = "FIFO"
+visualizer_sync_interval = "10"
+visualizer_type = "wave_filled"
+visualizer_look = "▃▃"
+visualizer_in_stereo = "yes"
+
+# user interface
+# user_interface = "alternative"
+user_interface = "classic"
+titles_visibility = "no"
+header_visibility = "no"
+header_text_scrolling = "yes"
+display_volume_level = "yes"
+display_bitrate = "no"
+display_remaining_time = "yes"
+enable_window_title = "yes"
+progressbar_look = "▃▃▃"
+song_list_format= "{%a - %t $R %l}|{%f $R %l}"
+song_status_format = "{%a - %t}|{%f}"
+cyclic_scrolling = "no"
+clock_display_seconds = "no"
+colors_enabled = "yes"
+selected_item_prefix = "▶"
+now_playing_prefix = "$b$1♪$7♪$8♪ "
+now_playing_suffix = "$/b$0"
+main_window_color = "white"
+
+# playlist interface
+playlist_show_mpd_host = "no"
+playlist_show_remaining_time = "yes"
+playlist_shorten_total_times = "yes"
+playlist_separate_albums = "yes"
+playlist_display_mode = "classic"
+playlist_editor_display_mode = "columns"
+ask_before_clearing_playlists = "yes"
+# browser_playlist_prefix="$5[LIST] $9"
+
+# playing setting
+incremental_seeking = "yes"
+seek_time = "5"
+volume_change_step = "5"
