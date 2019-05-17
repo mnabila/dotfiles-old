@@ -424,20 +424,19 @@ set_from_resource $white        color7          #a9a9aa
 set_from_resource $bwhite       color15         #fcfcfc
 
 # alternative colors
-set $ared                                       #c67d6f
+set $alt-red                                    #c67d6f
 
 # Changing colors
 # class                 border           backgr.         text            indicator       child_border
-client.focused          $yellow          $yellow         $background     $yellow          $background
-client.focused_inactive $background          $background         $foreground     $background     $background
-client.unfocused        $background          $background         $foreground     $background     $background
+client.focused          $yellow          $yellow         $background     $yellow         $background
+client.focused_inactive $background      $background     $foreground     $background     $background
+client.unfocused        $background      $background     $foreground     $background     $background
 client.urgent           $background      $background     $foreground     $background     $background
 client.placeholder      $background      $background     $foreground     $background     $background
 client.background       $background
 
 
 # autostart program
-exec feh --bg-scale "$HOME/Pictures/hdwall/google.png"
 exec xautolock -time 10 -locker mantablockscreen
 exec xfce4-power-manager
 
@@ -448,5 +447,6 @@ exec --no-startup-id udiskie
 exec --no-startup-id clipmenud
 exec --no-startup-id xbacklight -set 40
 
-exec_always $HOME/.config/polybar/launch.sh
+exec_always "$HOME/.config/polybar/launch.sh"
 exec_always killall compton; compton --dbus -b
+exec_always feh --bg-scale "$HOME/Pictures/hdwall/google.png"

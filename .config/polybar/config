@@ -446,7 +446,7 @@ interval = 30
 format-foreground = ${colors.brightwhite}
 format-padding = 1
 
-label =  %{T1}%time%%{T-}
+label =  %{A3:yad --calendar --title 'Calendar' --no-buttons --posx 1090 --posy 560 --close-on-unfocus:}%{T1}%time%%{T-}%{A}
 time =  %H:%M %p
 time-alt =  %A,%d-%m-%y
 ;==========================================================
