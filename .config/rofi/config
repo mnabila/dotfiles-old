@@ -14,7 +14,7 @@ rofi.show                 : drun
 rofi.drun-match-fields    : name
 rofi.window-match-fields  : name
 rofi.columns              : 1
-rofi.width                : 900
+rofi.width                : 800
 rofi.columns              : 1
 rofi.terminal             : st
 !rofi.pid                  : /tmp/rofi.pid

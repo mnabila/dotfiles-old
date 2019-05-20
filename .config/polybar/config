@@ -139,7 +139,7 @@ content-foreground = ${colors.brightwhite}
 type = custom/text
 content = 
 
-click-left = rofi -show drun
+click-left = jgmenu_run
 
 content-font = 1
 content-padding = 1

@@ -392,6 +392,9 @@ bindsym $mod+F8 exec --no-startup-id connman-gtk
 # Keybind Bantuan
 bindsym $mod+F10 exec --no-startup-id rofi -modi "KEYBINDS:~/.config/rofi/scripts/keybind-helper" -show KEYBINDS -lines 6
 
+# Restart Pulseeffects
+bindsym $mod+F12 exec "killall pulseeffects;pulseeffects --gapplication-service &"
+
 # read color from xresource
 # set_from_resource $<name> <resource_name> <fallback>
 # set $name <color>
@@ -445,8 +448,9 @@ exec --no-startup-id lxpolkit
 exec --no-startup-id pulseeffects --gapplication-service
 exec --no-startup-id udiskie
 exec --no-startup-id clipmenud
+exec --no-startup-id jgmenu
 exec --no-startup-id xbacklight -set 40
 
 exec_always "$HOME/.config/polybar/launch.sh"
 exec_always killall compton; compton --dbus -b
-exec_always feh --bg-scale "$HOME/Pictures/hdwall/google.png"
+exec_always feh --bg-scale "$HOME/Pictures/anime/megumin_konosuba_minimal_wallpaper_by_max028_dark.png"
