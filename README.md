@@ -20,12 +20,12 @@ Dotfiles are used to customize your system. The “dotfiles” name is derived f
 | Bar                   | polybar                                         |
 | Wallpaper             | feh                                             |
 | Lock Screen           | i3lock, mantablockscreen, slimlock              |
-| Logout / Shutdown     | rofi-tools                                      |
+| Logout / Shutdown     | rofi-script                                     |
 | Volume Control        | pulseaudio-ctl, amixer                          |
 | Brightness Controller | xbacklight                                      |
 | Network Applet        | nm-applet, connman-gtk                          |
 | Bluetooth Applet      | blueman-applet                                  |
-| Text Editor           | neovim, nano, vscode, sublime                   |
+| Text Editor           | neovim                                          |
 
 ## Table of Contents
 
@@ -51,7 +51,7 @@ Dotfiles are used to customize your system. The “dotfiles” name is derived f
 | Xresource  | [.Xresource](https://github.com/nabil48/dotfiles/blob/master/.Xresources) [.Xresource.d](https://github.com/nabil48/dotfiles/tree/master/.Xresources.d) |
 | Xterm      | [.Xresources.d/xterm](https://github.com/nabil48/dotfiles/blob/master/.Xresources.d/xterm)                                                              |
 | Zsh        | [.zshrc](https://github.com/nabil48/dotfiles/blob/master/.zshrc)                                                                                        |
-| Zimfw        | [.zshrc](https://github.com/nabil48/dotfiles/blob/master/.zimrc)                                                                                        |
+| Zimfw      | [.zimrc](https://github.com/nabil48/dotfiles/blob/master/.zimrc)                                                                                        |
 
 ## ScreenShot
 
