@@ -31,7 +31,7 @@ export CM_LAUNCHER=rofi
 export CM_DIR=/tmp/clipmenu
 
 # Untuk SLiM Session
-DEFAULTSESSION=i3
+DEFAULTSESSION=i3-with-shmlog
 case "$1" in
     i3) exec i3 ;;
     awesome) exec awesome ;;

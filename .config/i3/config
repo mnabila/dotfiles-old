@@ -14,7 +14,7 @@ set $mod Mod4
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 # font pango:monospace 8
-font pango:Iosevka Nerd Font 10
+font pango:Iosevka 10
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -111,12 +111,13 @@ hide_edge_borders smart
 
 # window spesific configuration
 # for_window [class=".*"] title_format "<b>%title</b>"
-for_window [class="vokoscreen"] floating enable
-for_window [class="Yad"] floating enable
-for_window [class="qjackctl"] floating enable
-for_window [class="PacketTracer7"] floating enable
-for_window [class="Connman-gtk"] floating enable
-for_window [class="pgadmin4"] border pixel 1
+for_window [class="vokoscreen"] floating enable border normal
+for_window [class="Yad"] floating enable border normal
+for_window [class="qjackctl"] floating enable border normal
+for_window [class="PacketTracer7"] floating enable border normal
+for_window [class="Connman-gtk"] floating enable border normal
+for_window [class="Pulseaudio-equalizer-gtk"] floating enable border normal
+for_window [class="pgadmin4"] floating enable border normal
 
 # workspace layout
 # Define names for default workspaces for which we configure key bindings later on.
@@ -393,7 +394,7 @@ bindsym $mod+F8 exec --no-startup-id connman-gtk
 bindsym $mod+F10 exec --no-startup-id rofi -modi "KEYBINDS:~/.config/rofi/scripts/keybind-helper" -show KEYBINDS -lines 6
 
 # Restart Pulseeffects
-bindsym $mod+F12 exec "killall pulseeffects;pulseeffects --gapplication-service &"
+# bindsym $mod+Escape exec "killall pulseeffects;pulseeffects --gapplication-service &"
 
 # read color from xresource
 # set_from_resource $<name> <resource_name> <fallback>
@@ -441,11 +442,12 @@ client.background       $background
 
 # autostart program
 exec xautolock -time 10 -locker mantablockscreen
+exec xautolock -time 25 -locker systemctl suspend
 exec xfce4-power-manager
 
 exec --no-startup-id mpd
 exec --no-startup-id lxpolkit
-exec --no-startup-id pulseeffects --gapplication-service
+# exec --no-startup-id pulseeffects --gapplication-service
 exec --no-startup-id udiskie
 exec --no-startup-id clipmenud
 exec --no-startup-id jgmenu
