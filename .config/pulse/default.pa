@@ -1,0 +1,17 @@
+### Load system wide configuration
+.include /etc/pulse/default.pa
+
+### Load the integrated PulseAudio equalizer and D-Bus module
+load-module module-equalizer-sink
+load-module module-dbus-protocol
+
+### set default output
+set-default-sink <alsa_output.pci-0000_00_1b.0.analog-stereo>
+
+### Dynamic Range Compression
+load-module module-ladspa-sink sink_name=shw_sc4 sink_master=your_card_sink_name plugin=sc4_1882 label=sc4 control=1,20,250,-18,2,9,0
+set-default-sink shw_sc4
+
+### Calf plugin for a more professional compressor
+load-module module-ladspa-sink sink_name=calf_comp_x2 sink_master=your_card_sink_name plugin=veal label=Compressor control=1,1,0.158,2,150,0,9,1,1,1
+set-default-sink calf_comp_x2
