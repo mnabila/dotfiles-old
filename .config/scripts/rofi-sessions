@@ -8,7 +8,7 @@
 OPTIONS="Reboot\nPoweroff\nSuspend\nHibernate"
 
 # source configuration or use default values
-LAUNCHER="rofi -dmenu -i -p Sessions:"
+LAUNCHER="dmenu -x 300 -y 220 -w 800 -fn Iosevka-11 -p Session -l 5 -i"
 USE_LOCKER="false"
 LOCKER="mantablockscreen"
 
