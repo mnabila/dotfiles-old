@@ -25,7 +25,7 @@ allow_multiline_dictionary_keys = False
 allow_multiline_lambdas = False
 
 # Allow splits before the dictionary value.
-allow_split_before_dict_value = True
+allow_split_before_dict_value = False
 
 # Number of blank lines surrounding top-level function and class
 # definitions.
@@ -185,7 +185,7 @@ split_before_dict_set_generator = True
 
 # Set to True to prefer splitting before 'and' or 'or' rather than
 # after.
-#split_before_logical_operator = True
+split_before_logical_operator = True
 
 # Split named assignments onto individual lines.
 #split_before_named_assigns = True

@@ -38,13 +38,14 @@ bindsym $mod+Return exec st
 bindsym $mod+Shift+q kill
 
 # start rofi (a program launcher)
-bindsym $mod+d exec rofi -show drun
+# bindsym $mod+d exec rofi -show drun
 # list open windows to switch to
-bindsym $mod+Tab exec rofi -show window
+bindsym $mod+Tab exec ~/.config/scripts/dswitcher
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
-bindsym $mod+Shift+d exec --no-startup-id i3-dmenu-desktop
+bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu="dmenu -fn 'Iosevka-11' -nb '#282828' -nf '#ebdbb2' -sb '#d79921' -w '800' -x '300' -y '220' -p 'Apps' -i -l 10"
+bindsym $mod+Shift+d exec --no-startup-id dmenu_run -fn "Iosevka-11" -nb "#282828" -nf "#ebdbb2" -sb "#d79921" -w "800" -x "300" -y "220" -p "Run" -i -l 10
 
 # change focus
 bindsym $mod+j focus left
@@ -366,7 +367,7 @@ bindsym $mod+p exec --no-startup-id clipmenu
 bindsym $mod+Shift+p exec --no-startup-id rm -rf /tmp/clipmenu/*
 
 # Restart, Suspend, Shutdown, Logout Dialog
-bindsym $mod+End exec --no-startup-id ~/.config/rofi/scripts/rofi-sessions
+bindsym $mod+End exec --no-startup-id ~/.config/scripts/rofi-sessions
 
 # Blank Space under i3
 bindsym $mod+o exec --no-startup-id i3-msg open
@@ -379,7 +380,7 @@ bindsym $mod+F9 exec --no-startup-id xinput --disable "SynPS/2 Synaptics TouchPa
 bindsym $mod+Shift+F9 exec --no-startup-id xinput --enable "SynPS/2 Synaptics TouchPad"
 
 # Lockscreen
-bindsym XF86ScreenSaver exec --no-startup-id slimlock
+bindsym XF86ScreenSaver exec --no-startup-id i3lock-fancy
 
 # Sleep
 bindsym XF86Sleep exec --no-startup-id systemctl suspend
@@ -441,7 +442,6 @@ client.background       $background
 
 
 # autostart program
-exec xautolock -time 10 -locker mantablockscreen
 exec xautolock -time 25 -locker systemctl suspend
 exec xfce4-power-manager
 
@@ -452,7 +452,9 @@ exec --no-startup-id udiskie
 exec --no-startup-id clipmenud
 exec --no-startup-id jgmenu
 exec --no-startup-id xbacklight -set 40
+exec --no-startup-id pulseaudio-equalizer enable
 
+exec_always killall xautolock;xautolock -time 10 -locker i3lock-fancy
 exec_always "$HOME/.config/polybar/launch.sh"
 exec_always killall compton; compton --dbus -b
 exec_always feh --bg-scale "$HOME/Pictures/anime/megumin_konosuba_minimal_wallpaper_by_max028_dark.png"

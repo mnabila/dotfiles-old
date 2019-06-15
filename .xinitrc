@@ -27,7 +27,7 @@ export TERMINAL=st
 export TERMCMD=st
 
 # Clipmenu Environment Variables
-export CM_LAUNCHER=rofi
+export CM_LAUNCHER=dmenu
 export CM_DIR=/tmp/clipmenu
 
 # Untuk SLiM Session
