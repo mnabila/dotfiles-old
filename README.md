@@ -16,11 +16,11 @@ Dotfiles are used to customize your system. The “dotfiles” name is derived f
 | Compositor            | Compton                                         |
 | Notification          | Dunst                                           |
 | Terminal              | URxvt, Termite, suckless terminal               |
-| Launcher              | rofi, dmenu, jgmenu                             |
+| Launcher              | rofi, dmenu, jgmenu, j4-dmenu-desktop           |
 | Bar                   | polybar                                         |
 | Wallpaper             | feh                                             |
 | Lock Screen           | i3lock, mantablockscreen, slimlock              |
-| Logout / Shutdown     | rofi-script                                     |
+| Logout / Shutdown     | script                                          |
 | Volume Control        | pulseaudio-ctl, amixer                          |
 | Brightness Controller | xbacklight                                      |
 | Network Applet        | nm-applet, connman-gtk                          |
@@ -32,16 +32,17 @@ Dotfiles are used to customize your system. The “dotfiles” name is derived f
 | Item       | Value                                                                                                                                                   |
 | :--------- | :------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Conky      | [.config/conky](https://github.com/nabil48/dotfiles/tree/master/.config/conky)                                                                          |
-| Openbox    | [.config/openbox](https://github.com/nabil48/dotfiles/tree/master/.config/openbox)                                                                      |
 | I3-wm      | [.config/i3](https://github.com/nabil48/dotfiles/tree/master/.config/i3)                                                                                |
 | Jgmenu     | [.config/jgmenu](https://github.com/nabil48/dotfiles/tree/master/.config/jgmenu)                                                                        |
 | Kvantum    | [.config/Kvantum](https://github.com/nabil48/dotfiles/tree/master/.config/Kvantum)                                                                      |
 | Ncmpcpp    | [.ncmpcpp](https://github.com/nabil48/dotfiles/tree/master/.ncmpcpp)                                                                                    |
 | Neovim     | [init.nvim](https://github.com/nabil48/dotfiles/blob/master/.config/nvim)                                                                               |
+| Openbox    | [.config/openbox](https://github.com/nabil48/dotfiles/tree/master/.config/openbox)                                                                      |
 | Polybar    | [.config/polybar](https://github.com/nabil48/dotfiles/tree/master/.config/polybar)                                                                      |
 | Rofi       | [.config/rofi](https://github.com/nabil48/dotfiles/tree/master/.config/rofi)                                                                            |
 | Rofi-tools | [.config/rofi-tools](https://github.com/nabil48/dotfiles/tree/master/.config/rofi-tools)                                                                |
 | Screenshot | [preview](https://github.com/nabil48/dotfiles/tree/master/preview)                                                                                      |
+| Scripts    | [./config/scripts](https://github.com/nabil48/dotfiles/blob/master/.config/scripts)                                                                     |
 | Termite    | [.config/termite](https://github.com/nabil48/dotfiles/tree/master/.config/termite)                                                                      |
 | Tint2      | [.config/tint2](https://github.com/nabil48/dotfiles/tree/master/.config/tint2)                                                                          |
 | Tmux       | [.tmux.conf](https://github.com/nabil48/dotfiles/blob/master/.tmux.conf)                                                                                |
@@ -50,8 +51,8 @@ Dotfiles are used to customize your system. The “dotfiles” name is derived f
 | Wallpaper  | [wallpaper](https://github.com/nabil48/dotfiles/tree/master/wallpaper)                                                                                  |
 | Xresource  | [.Xresource](https://github.com/nabil48/dotfiles/blob/master/.Xresources) [.Xresource.d](https://github.com/nabil48/dotfiles/tree/master/.Xresources.d) |
 | Xterm      | [.Xresources.d/xterm](https://github.com/nabil48/dotfiles/blob/master/.Xresources.d/xterm)                                                              |
-| Zsh        | [.zshrc](https://github.com/nabil48/dotfiles/blob/master/.zshrc)                                                                                        |
 | Zimfw      | [.zimrc](https://github.com/nabil48/dotfiles/blob/master/.zimrc)                                                                                        |
+| Zsh        | [.zshrc](https://github.com/nabil48/dotfiles/blob/master/.zshrc)                                                                                        |
 
 ## ScreenShot
 
