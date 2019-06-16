@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Repository : https://github.com/okraits/rofi-tools/blob/master/rofi-power
 
 # rofi-power
 # Use rofi to call systemctl for shutdown, reboot, etc

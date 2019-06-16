@@ -1,6 +1,5 @@
 #!/bin/bash
-# Dmenu-based window switcher for EWMH-compliant X11 window managers. 
-# repository: https://github.com/Excerion/dswitcher
+# Repository : https://github.com/Excerion/dswitcher
 
 # Date format, for use as the prompt.
 date=$(date +"%a %d. %b %R")
