@@ -94,7 +94,7 @@ function gen_entries()
 }
 
 # Call menu
-SEL=$( gen_entries | dmenu -x 300 -y 220 -w 800 -fn Iosevka-11 -p Session -l 5 -i -p "Monitor Setup:" | awk '{print $1}' )
+SEL=$( gen_entries | dmenu -x 300 -y 220 -w 800 -fn Iosevka-11 -p Session -l 5 -i -p "Monitor" | awk '{print $1}' )
 
 # Call xrandr
 $( ${COMMANDS[$SEL]} )

@@ -35,9 +35,9 @@ FILE_EXTENSION_LOWER="$(printf "%s" "${FILE_EXTENSION}" | tr '[:upper:]' '[:lowe
 
 # Settings
 HIGHLIGHT_SIZE_MAX=262143  # 256KiB
-HIGHLIGHT_TABWIDTH=8
+HIGHLIGHT_TABWIDTH=4
 HIGHLIGHT_STYLE='moria'
-PYGMENTIZE_STYLE='autumn'
+PYGMENTIZE_STYLE='fruity'
 
 
 handle_extension() {

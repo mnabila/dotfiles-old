@@ -62,7 +62,7 @@ song_columns_list_format = "(50)[yellow]{ar} (50)[green]{t}"
 # Colors #
 current_item_prefix = "$(green)$r"
 current_item_suffix = "$/r$(end)"
-main_window_color = "black"
+main_window_color = "white"
 #state_line_color = "yellow"
 #state_flags_color = "green"
 color1 = "white"

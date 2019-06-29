@@ -10,7 +10,7 @@
 file="$HOME/.todo"
 touch "$file"
 height=$(wc -l "$file" | awk '{print $1}')
-prompt="Todo: "
+prompt="Todo"
 
 cmd=$(dmenu -x 300 -y 220 -w 800 -l "$height" -p "$prompt" "$@" < "$file")
 while [ -n "$cmd" ]; do

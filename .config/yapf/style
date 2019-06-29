@@ -22,7 +22,7 @@ align_closing_bracket_with_visual_indent = True
 allow_multiline_dictionary_keys = False
 
 # Allow lambdas to be formatted on more than one line.
-allow_multiline_lambdas = False
+allow_multiline_lambdas = True
 
 # Allow splits before the dictionary value.
 allow_split_before_dict_value = False
@@ -129,7 +129,7 @@ indent_dictionary_value = True
 indent_width = 4
 
 # Join short lines into one line. E.g., single line 'if' statements.
-# join_multiple_lines = True
+join_multiple_lines = True
 
 # Do not include spaces around selected binary operators. For example:
 #
@@ -156,15 +156,15 @@ space_between_ending_comma_and_closing_bracket = False
 
 # Split before arguments if the argument list is terminated by a
 # comma.
-#split_arguments_when_comma_terminated = False
+split_arguments_when_comma_terminated = False
 
 # Set to True to prefer splitting before '&', '|' or '^' rather than
 # after.
-#split_before_bitwise_operator = True
+split_before_bitwise_operator = True
 
 # Split before the closing bracket if a list or dict literal doesn't fit on
 # a single line.
-#split_before_closing_bracket = True
+split_before_closing_bracket = True
 
 # Split before a dictionary or set generator (comp_for). For example, note
 # the split before the 'for':
@@ -177,18 +177,18 @@ split_before_dict_set_generator = True
 
 # Split after the opening paren which surrounds an expression if it doesn't
 # fit on a single line.
-#split_before_expression_after_opening_paren = False
+split_before_expression_after_opening_paren = True
 
 # If an argument / parameter list is going to be split, then split before
 # the first argument.
-#split_before_first_argument = False
+split_before_first_argument = True
 
 # Set to True to prefer splitting before 'and' or 'or' rather than
 # after.
 split_before_logical_operator = True
 
 # Split named assignments onto individual lines.
-#split_before_named_assigns = True
+split_before_named_assigns = True
 
 # Set to True to split list comprehensions and generators that have
 # non-trivial expressions and multiple clauses before each of these

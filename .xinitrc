@@ -34,6 +34,7 @@ export CM_DIR=/tmp/clipmenu
 DEFAULTSESSION=i3-with-shmlog
 case "$1" in
     i3) exec i3 ;;
+    dwm) exec dwm ;;
     awesome) exec awesome ;;
     i3-with-shmlog) exec i3-with-shmlog ;;
     sway) exec sway ;;

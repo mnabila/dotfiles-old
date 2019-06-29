@@ -102,7 +102,7 @@ bindsym $mod+Shift+space floating toggle move position center border normal
 
 # resize floating window
 floating_minimum_size 75 x 50
-# floating_maximum_size 1350 x 730
+floating_maximum_size 1266 x 624
 
 # window configuration
 title_align center
@@ -374,6 +374,7 @@ bindsym $mod+o exec --no-startup-id i3-msg open
 
 # Arandr
 bindsym XF86Display exec --no-startup-id ~/.config/scripts/monitor_layout.sh
+bindsym $mod+F5 exec --no-startup-id arandr
 
 # TouchPad 
 bindsym $mod+F9 exec --no-startup-id xinput --disable "SynPS/2 Synaptics TouchPad"
@@ -388,12 +389,16 @@ bindsym XF86Sleep exec --no-startup-id systemctl suspend
 # Hibernate
 # bindsym XF86Suspend exec --no-startup-id systemctl hibernate
 
+
+# Keybind bantuan
+bindsym $mod+F1 exec --no-startup-id ~/.config/scripts/help-browser.sh
+
+# Keybind bantuan
+bindsym $mod+F2 exec --no-startup-id ~/.config/scripts/udiskie-dmenu -fn "Iosevka-11" -nb "#282828" -nf "#ebdbb2" -sb "#d79921" -w "800" -x "300" -y "220" -p "Storage" -i -l 10
+
 # Network maanger
 bindsym $mod+F8 exec --no-startup-id connman-gtk
 
-# Keybind bantuan
-bindsym $mod+F1 exec --no-startup-id ~/.config/scripts/help-script-browser.sh|dmenu -x 300 -y 220 -w 800 -fn Iosevka-11 -p Session -l 5 -i
-#
 # Keybind todo
 bindsym $mod+F10 exec --no-startup-id ~/.config/scripts/todo
 
@@ -460,7 +465,7 @@ exec --no-startup-id jgmenu
 exec --no-startup-id xbacklight -set 40
 exec --no-startup-id pulseaudio-equalizer enable
 
-exec_always killall xautolock;xautolock -time 10 -locker i3lock-fancy
+exec_always killall xautolock;xautolock -time 15 -locker i3lock-fancy
 exec_always "$HOME/.config/polybar/launch.sh"
 exec_always killall compton; compton --dbus -b
-exec_always feh --bg-scale "$HOME/Pictures/anime/megumin_konosuba_minimal_wallpaper_by_max028_dark.png"
+exec_always feh --bg-scale "$HOME/Pictures/anime/wallhaven-83kw8j-vim.png"
