@@ -13,7 +13,13 @@ xresources = read_xresources("*")
 # Aliases for commands. The keys of the given dictionary are the
 # aliases, while the values are the commands they map to.
 # Type: Dict
-c.aliases = {'q': 'close', 'qa': 'quit', 'w': 'session-save', 'wq': 'quit --save', 'wqa': 'quit --save'}
+c.aliases = {
+    'q': 'close',
+    'qa': 'quit',
+    'w': 'session-save',
+    'wq': 'quit --save',
+    'wqa': 'quit --save',
+}
 
 # Enable JavaScript.
 # Type: Bool
@@ -93,11 +99,25 @@ c.url.default_page = 'about:blank'
 # used by prepending the search engine name to the search term, e.g.
 # `:open google qutebrowser`.
 # Type: Dict
-c.url.searchengines = {'DEFAULT': 'https://www.google.com/search?hl=en&q={}', 'd': 'https://duckduckgo.com/?q={}', 'wa': 'https://wiki.archlinux.org/?search={}', 'y': 'https://www.youtube.com/results?search_query={}'}
+c.url.searchengines = {
+    'DEFAULT': 'https://www.google.com/search?hl=en&q={}',
+    'aw': 'https://wiki.archlinux.org/?search={}',
+    'aa': 'https://aur.archlinux.org/packages/?O=0&K={}',
+    'd': 'https://duckduckgo.com/?q={}',
+    'da': 'http://www.deviantart.com/?q={}',
+    'mal': 'https://myanimelist.net/search/all?q={}',
+    'yt': 'https://www.youtube.com/results?search_query={}',
+}
 
 # Page(s) to open at the start.
 # Type: List of FuzzyUrl, or FuzzyUrl
 c.url.start_pages = 'about:blank'
+
+# Text color of the completion widget. May be a single color to use for all columns or a list of three colors, one for each column.
+# Type: List of QtColor, or QtColor
+c.colors.completion.fg = [
+    xresources["*color15"], xresources["*color7"], xresources["*color15"]
+]
 
 # Background color of the completion widget for odd rows.
 # Type: QssColor
@@ -105,7 +125,11 @@ c.colors.completion.odd.bg = xresources["*color0"]
 
 # Background color of the completion widget category headers.
 # Type: QssColor
-c.colors.completion.category.bg = 'qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #888888, stop:1 #505050)'
+c.colors.completion.category.bg = xresources["*color0"]
+
+# Foreground color of completion widget category headers.
+# Type: QtColor
+c.colors.completion.category.fg = xresources["*color15"]
 
 # Top border color of the completion widget category headers.
 # Type: QssColor
@@ -114,6 +138,10 @@ c.colors.completion.category.border.top = xresources["*color0"]
 # Bottom border color of the completion widget category headers.
 # Type: QssColor
 c.colors.completion.category.border.bottom = xresources["*color0"]
+
+# Background color of the completion widget for even rows.
+# Type: QssColor
+c.colors.completion.even.bg = xresources["*color0"]
 
 # Foreground color of the selected completion item.
 # Type: QtColor
@@ -218,3 +246,13 @@ c.colors.tabs.selected.even.fg = xresources["*color0"]
 # Background color of selected even tabs.
 # Type: QtColor
 c.colors.tabs.selected.even.bg = xresources["*color3"]
+
+#
+# Keybinding
+#
+config.bind("<Space>m", "hint links spawn mpv {hint-url}", "normal")
+config.bind(
+    "<Space>d",
+    "hint links spawn 'tmux new-window aria2c -o ~/Downloads/' {hint-url} ",
+    "normal"
+)

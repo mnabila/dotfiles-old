@@ -6,7 +6,7 @@ killall -q polybar
 # Wait until the processes have been shut down
 while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
-export WLAN="wlan0"
+export WLAN="wlp3s0"
 
 # for multimonitor
 if type "xrandr"; then

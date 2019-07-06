@@ -46,7 +46,7 @@ brightwhite     = ${xrdb:color15}
 font-0 = "Iosevka Nerd Font:size=10;2:Light"
 font-1 = "Iosevka Nerd Font:size=10:weight=bold;2"
 font-2 = "Material Icons:size=13;4"
-hwmon-path = /sys/devices/virtual/thermal/thermal_zone0/hwmon0/temp1_input
+hwmon-path = /sys/devices/virtual/thermal/thermal_zone0/hwmon1/temp1_input
 monitor = ${env:MONITOR:LVDS-1}
 mpd-host = 127.0.0.1
 mpd-port = 6600
