@@ -11,7 +11,7 @@ export WLAN="wlp3s0"
 # for multimonitor
 if type "xrandr"; then
   for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
-    MONITOR=$m polybar --reload -c $HOME/.config/polybar/config main &
+    MONITOR=$m polybar --reload -c $HOME/.config/polybar/config bottom &
   done
 else
   polybar --reload main &
