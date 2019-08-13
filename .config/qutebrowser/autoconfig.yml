@@ -3,6 +3,5 @@
 
 config_version: 2
 settings:
-  bindings.commands:
-    global:
-      normal: {}
+  content.notifications:
+    https://www.bukalapak.com: false

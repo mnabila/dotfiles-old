@@ -15,13 +15,15 @@ ZIM_HOME=${ZDOTDIR:-${HOME}}/.zim
 [ -f ~/.aliases ] && source ~/.aliases
 #
 # heroku autocomplete setup
-HEROKU_AC_ZSH_SETUP_PATH=/home/nabil/.cache/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
+HEROKU_AC_ZSH_SETUP_PATH=${HOME}/.cache/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
+
+# Environment
+# export GEM_HOME=$HOME/.gem
+# export PYENV_ROOT="${HOME}/.pyenv"
 
 ## Path
-PATH="$PATH:$(ruby -e 'print Gem.user_dir')/bin"
-export GEM_HOME=$HOME/.gem
-export PATH="/home/nabil/.local/bin:$PATH"
-export PATH="/home/nabil/.toys:$PATH"
-# export PATH="/opt/lampp/bin:$PATH"
-# export PYENV_ROOT="$HOME/.pyenv"
+# export PATH="$PATH:$(ruby -e 'print Gem.user_dir')/bin"
 # export PATH="$PYENV_ROOT/bin:$PATH"
+# export PATH="${HOME}/.gem/ruby/2.6.0/bin:$PATH"
+# export PATH="${HOME}/.local/bin:$PATH"
+# export PATH="${HOME}/.toys:$PATH"

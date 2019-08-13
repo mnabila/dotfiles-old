@@ -14,7 +14,7 @@ set $mod Mod4
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 # font pango:monospace 8
-font pango:Iosevka 10
+font pango:Iosevka 9
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -160,7 +160,7 @@ bindsym $mod+Shift+8 move container to workspace $ws8
 bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
 
-# Cycle through active workspaces
+# cycle through active workspaces
 bindsym $mod+Ctrl+Right workspace next
 bindsym $mod+Ctrl+Left workspace prev
 
@@ -389,7 +389,6 @@ bindsym XF86Sleep exec --no-startup-id systemctl suspend
 # Hibernate
 # bindsym XF86Suspend exec --no-startup-id systemctl hibernate
 
-
 # Keybind bantuan
 bindsym $mod+F1 exec --no-startup-id ~/.config/scripts/help-browser.sh
 
@@ -402,11 +401,13 @@ bindsym $mod+F8 exec --no-startup-id connman-gtk
 # Keybind todo
 bindsym $mod+F10 exec --no-startup-id ~/.config/scripts/todo
 
-# Keybind mpd
+# Keybind mpdmenu
 bindsym $mod+F11 exec --no-startup-id ~/.config/scripts/mpdmenu
-#
-# Restart pulseeffects
-# bindsym $mod+Escape exec "killall pulseeffects;pulseeffects --gapplication-service &"
+
+# Keybind mpc
+bindsym $mod+Pause exec --no-startup-id mpc toggle
+bindsym $mod+Shift+plus exec --no-startup-id mpc next
+bindsym $mod+Shift+minus exec --no-startup-id mpc prev
 
 # read color from xresource
 # set_from_resource $<name> <resource_name> <fallback>
@@ -453,8 +454,9 @@ client.background       $background
 
 
 # autostart program
-exec xautolock -time 25 -locker systemctl suspend
 exec xfce4-power-manager
+exec xautolock -time 25 -locker systemctl suspend
+exec xautolock -time 15 -locker i3lock-fancy
 
 exec --no-startup-id mpd
 exec --no-startup-id lxpolkit
@@ -463,9 +465,7 @@ exec --no-startup-id udiskie
 exec --no-startup-id clipmenud
 exec --no-startup-id jgmenu
 exec --no-startup-id xbacklight -set 40
-exec --no-startup-id pulseaudio-equalizer enable
 
-exec_always killall xautolock;xautolock -time 15 -locker i3lock-fancy
 exec_always "$HOME/.config/polybar/launch.sh"
 exec_always killall compton; compton --dbus -b
-exec_always feh --bg-scale "$HOME/Pictures/anime/wallhaven-83kw8j-vim.png"
+exec_always feh --bg-scale "$HOME/Pictures/natural/wallhaven-708551.jpg"

@@ -1,3 +1,4 @@
+# vim: set ft=sh
 #!/usr/bin/env sh
 
 # Terminate already running bar instances
@@ -11,7 +12,7 @@ export WLAN="wlp3s0"
 # for multimonitor
 if type "xrandr"; then
   for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
-    MONITOR=$m polybar --reload -c $HOME/.config/polybar/config bottom &
+    MONITOR=$m polybar --reload -c $HOME/.config/polybar/config.ini bottom &
   done
 else
   polybar --reload main &

@@ -1,19 +1,35 @@
+#!/usr/bin/env sh
+
+#
 # ENVIRONMENT SETUP
-export BROWSER="firefox"
+#
 export EDITOR=nvim
+# export BROWSER=qutebrowser
+export FONTCONFIG_PATH=/etc/fonts
+
+export QT_AUTO_SCREEN_SCALE_FACTOR=1
 export QT_QPA_PLATFORMTHEME=qt5ct
+export QT_SCALE_FACTOR=1
+export QT_SCREEN_SCALE_FACTORS=1
+
+export GEM_HOME=$HOME/.gem
+export PYENV_ROOT="${HOME}/.pyenv"
+
 export TERM=screen-256color
 export TERMINAL=st
 
 # Clipmenu Environment Variables
-export CM_LAUNCHER=rofi
+export CM_LAUNCHER=dmenu
 export CM_DIR=/tmp/clipmenu
 
+# default terminal ranger
+export TERMCMD=st
+
 # Path
-PATH="$PATH:$(ruby -e 'print Gem.user_dir')/bin"
-export GEM_HOME=$HOME/.gem
-export PATH="/home/nabil/.local/bin:$PATH"
-export PATH="/home/nabil/.toys:$PATH"
-# export PATH="/opt/lampp/bin:$PATH"
-export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
+export PATH="${HOME}/.gem/ruby/2.6.0/bin:$PATH"
+export PATH="${HOME}/.local/bin:$PATH"
+export PATH="${HOME}/.toys:$PATH"
+
+# Manpages
+export MANPAGER="/bin/sh -c \"col -b | nvim -c 'set ft=man ts=8 nomod nolist nonu noma' -\""

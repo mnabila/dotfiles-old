@@ -12,30 +12,15 @@ if [ -d /etc/X11/xinit/xinitrc.d  ]; then
   unset f
 fi
 
-export EDITOR=nvim
-export FONTCONFIG_PATH=/etc/fonts
-
-export QT_AUTO_SCREEN_SCALE_FACTOR=1
-export QT_QPA_PLATFORMTHEME=qt5ct
-export QT_SCALE_FACTOR=1
-export QT_SCREEN_SCALE_FACTORS=1
-
-export TERM=screen-256color
-export TERMINAL=st
-
-# default terminal ranger
-export TERMCMD=st
-
-# Clipmenu Environment Variables
-export CM_LAUNCHER=dmenu
-export CM_DIR=/tmp/clipmenu
+# Load .xprofile
+[ -f ~/.xprofile ] && . ~/.xprofile
 
 # Untuk SLiM Session
 DEFAULTSESSION=i3-with-shmlog
 case "$1" in
-    i3) exec i3 ;;
-    dwm) exec dwm ;;
     awesome) exec awesome ;;
+    dwm) exec dwm ;;
+    i3) exec i3 ;;
     i3-with-shmlog) exec i3-with-shmlog ;;
     sway) exec sway ;;
     *) exec $DEFAULTSESSION ;;

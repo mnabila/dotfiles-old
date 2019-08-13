@@ -17,6 +17,7 @@ zstyle ':zim:module' async 'url' 'mafredri/zsh-async'
 zstyle ':zim:module' pure 'url' 'sindresorhus/pure'
 zstyle ':zim:module' spaceship 'url' 'denysdovhan/spaceship-prompt'
 
+
 ###################
 # MODULE SETTINGS #
 ###################
@@ -29,8 +30,11 @@ zstyle ':zim:module' spaceship 'url' 'denysdovhan/spaceship-prompt'
 zprompt_theme='pure'
 
 # theme config
-PURE_PROMPT_SYMBOL=❯❯❯
-PURE_PROMPT_VICMD_SYMBOL=❮❮❮
+PURE_PROMPT_SYMBOL=❱❱❱
+PURE_PROMPT_VICMD_SYMBOL=❰❰❰
+
+# Change prompt color
+zstyle ':prompt:pure:path' color yellow
 
 #
 # completion
