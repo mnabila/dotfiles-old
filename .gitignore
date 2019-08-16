@@ -4,6 +4,7 @@
 .config/ranger/__pycache__/
 .config/ranger/bookmarks
 .config/ranger/colorschemes/__pycache__/
+.config/ranger/plugins/__pycache__/
 .config/ranger/history
 .config/rofi-tools
 copier.sh

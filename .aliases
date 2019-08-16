@@ -3,7 +3,6 @@
 alias dir2iso="python ~/Project/tools/dir2iso.py"
 alias ytrename="python ~/Project/tools/Batch\ renamer.py"
 alias neofetch="neofetch --ascii ~/.config/neofetch/chess.txt"
-alias upgrade="pekmen;sudo reflector  --verbose --latest 5 --protocol http --protocol https --sort rate --save /etc/pacman.d/mirrorlist;sudo pacman -Syyuw"
 alias screencast="adb connect 192.168.43.1:5555; scrcpy -b 2M -m 1080 &"
 
 # yotube-viewer
@@ -15,7 +14,8 @@ alias yt7="youtube-viewer --resolution=720p"
 alias yt10="youtube-viewer --resolution=1080p"
 
 # pacman
+alias upgrade="pekmen;sudo reflector  --verbose --latest 10 --protocol http --protocol https --sort rate --save /etc/pacman.d/mirrorlist;sudo pacman -Syyuw"
 alias paczf="pacman -Qq | fzf --preview 'pacman -Qil {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less)'"
 alias pacname="pacman -Sup --print-format \"%n\" | sort -n"
-alias pacurl="pacman -Sup --print-format \"%l\" | sort -n"
+alias pacurl="pacman -Sup | grep https"
 alias pacsize="pacman -Sup --print-format \"%s %n\" | sort -n"
