@@ -7,4 +7,5 @@
 .config/ranger/plugins/__pycache__/
 .config/ranger/history
 .config/rofi-tools
+.config/awesome/
 copier.sh
