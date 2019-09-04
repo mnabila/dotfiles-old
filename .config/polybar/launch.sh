@@ -1,19 +1,47 @@
 # vim: set ft=sh
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
-# Terminate already running bar instances
-killall -q polybar
+function set_env_vars() {
+  # export HOSTNAME
+  export ETH_INTERFACE
+  export WLAN_INTERFACE
+  export DEFAULT_INTERFACE
 
-# Wait until the processes have been shut down
-while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
+  ETH_INTERFACE=$(ip link show | grep enp | sed 's/.*: \(.*\):.*/\1/')
+  WLAN_INTERFACE=$(ip link show | grep wlp | sed 's/.*: \(.*\):.*/\1/')
+  DEFAULT_INTERFACE=$(ip route | grep '^default' | awk '{print $5}')
+}
 
-export WLAN="wlp3s0"
+function stop() {
+  if pgrep polybar; then
+    killall -q polybar
+  fi
+}
 
-# for multimonitor
-if type "xrandr"; then
-  for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
-    MONITOR=$m polybar --reload -c $HOME/.config/polybar/config.ini bottom &
-  done
-else
-  polybar --reload main &
-fi
+function start() {
+  set_env_vars
+  if type "xrandr"; then
+    for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
+      MONITOR=$m polybar --reload -c $HOME/.config/polybar/config.ini bottom &
+      MONITOR=$m polybar --reload -c $HOME/.config/polybar/config.ini systray &
+    done
+  else
+    polybar --reload main &
+  fi
+}
+
+function toggle() {
+  if pgrep polybar; then
+    stop
+  else
+    start
+  fi
+}
+
+case $1 in
+  start|restart ) stop ; start ;;
+  stop )          stop ;;
+  toggle )        toggle ;;
+  * )             echo "Say 'start', 'stop' or 'toggle' my sweetheart!"
+    exit 2
+esac

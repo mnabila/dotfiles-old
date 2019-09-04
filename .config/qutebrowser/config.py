@@ -117,6 +117,7 @@ c.url.searchengines = {
     "gt": "https://translate.google.com/#view=home&op=translate&sl=auto&tl=en&text={}",
     "mal": "https://myanimelist.net/search/all?q={}",
     "py": "https://pypi.org/search/?q={}",
+    "yp": "https://yarnpkg.com/en/packages?q={}&p=1",
     "yt": "https://www.youtube.com/results?search_query={}",
 }
 

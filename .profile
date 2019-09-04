@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 #
-# ENVIRONMENT SETUP
+# ENVIRONMENT SETUP #
 #
 export EDITOR=nvim
 # export BROWSER=qutebrowser
@@ -29,7 +29,15 @@ export TERMCMD=st
 export PATH="$PYENV_ROOT/bin:$PATH"
 export PATH="${HOME}/.gem/ruby/2.6.0/bin:$PATH"
 export PATH="${HOME}/.local/bin:$PATH"
-export PATH="${HOME}/.toys:$PATH"
+export PATH="${HOME}/.config/scripts:$PATH"
+export PATH="/usr/lib/ccache/bin/:$PATH"
 
+# FZF with gruvbox colorscheme
+export FZF_DEFAULT_OPTS='
+ --color=fg:#ebdbb2,bg:#282828,hl:#d79921
+ --color=fg+:#282828,bg+:#d79921,hl+:#282828
+ --color=info:#ebdbb2,prompt:#d3869b,pointer:#282828
+ --color=marker:#282828,spinner:#d3869b,header:#d79921
+'
 # Manpages
 export MANPAGER="/bin/sh -c \"col -b | nvim -c 'set ft=man ts=8 nomod nolist nonu noma' -\""

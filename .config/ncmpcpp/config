@@ -1,23 +1,31 @@
-### Directories ###
+#
+# Directories #
+#
 ncmpcpp_directory = ~/.config/ncmpcpp
 lyrics_directory  = ~/.config/ncmpcpp/lyrics
 mpd_music_dir     = ~/Music
 
-### Behaviour ###
+#
+# Behaviour #
+#
 execute_on_song_change = "bash ~/.config/ncmpcpp/script/notification"
 message_delay_time = 1
 autocenter_mode = "yes"
 centered_cursor = "yes"
 ignore_leading_the = "yes"
-allow_for_physical_item_deletion = "no"
+allow_for_physical_item_deletion = "yes"
 
-### Visualizer ###  
+#
+# Visualizer #
+#
 visualizer_fifo_path = /tmp/mpd.fifo
 visualizer_output_name = "mpd_visualizer"
 visualizer_in_stereo = "no"
 visualizer_sync_interval = 30
 
-### Appearance ###
+#
+# Appearance #
+#
 colors_enabled = "yes"
 playlist_display_mode = "columns"
 
@@ -68,12 +76,11 @@ main_window_color = "white"
 color1 = "white"
 color2 = "red"
 
-### connection settings ###
+#
+# connection settings #
 #
 mpd_host = localhost
-#
 mpd_port = 6600
-#
 mpd_connection_timeout = 5
 #
 ## Needed for tag editor and file operations to work.
