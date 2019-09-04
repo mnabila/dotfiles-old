@@ -19,7 +19,7 @@ set-default-sink calf_comp_x2
 ### BEGIN: Equalized audio configuration
 ### Generated from: pulseaudio-equalizer
 .nofail
-load-module module-ladspa-sink sink_name=ladspa_output.mbeq_1197.mbeq sink_master=alsa_output.pci-0000_00_1b.0.analog-stereo plugin=mbeq_1197 label=mbeq control=0.0,0.0,0.0,0,0,0.0,0.0,0.0,0.0,0,0,0.0,0.0,0.0,0.0
+load-module module-ladspa-sink sink_name=ladspa_output.mbeq_1197.mbeq sink_master=alsa_output.pci-0000_00_1b.0.analog-stereo plugin=mbeq_1197 label=mbeq control=3.0,3.0,7.3,7.0,3.0,-1.0,-6.6,-6.3,-4.5,-4.0,1.1,1.2,5.8,7.9,8.8
 set-default-sink ladspa_output.mbeq_1197.mbeq
 set-sink-mute alsa_output.pci-0000_00_1b.0.analog-stereo 0
 .fail

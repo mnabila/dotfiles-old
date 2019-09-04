@@ -36,7 +36,7 @@ Dotfiles are used to customize your system. The “dotfiles” name is derived f
 | Jgmenu     | [.config/jgmenu](https://github.com/mnabila/dotfiles/tree/master/.config/jgmenu)                                                                        |
 | Kvantum    | [.config/Kvantum](https://github.com/mnabila/dotfiles/tree/master/.config/Kvantum)                                                                      |
 | Ncmpcpp    | [.ncmpcpp](https://github.com/mnabila/dotfiles/tree/master/.ncmpcpp)                                                                                    |
-| Neovim     | [init.nvim](https://github.com/mnabila/dotfiles/blob/master/.config/nvim)                                                                               |
+| Neovim     | [init.nvim](https://github.com/mnabila/nvimrc)                                                                               |
 | Openbox    | [.config/openbox](https://github.com/mnabila/dotfiles/tree/master/.config/openbox)                                                                      |
 | Polybar    | [.config/polybar](https://github.com/mnabila/dotfiles/tree/master/.config/polybar)                                                                      |
 | Rofi       | [.config/rofi](https://github.com/mnabila/dotfiles/tree/master/.config/rofi)                                                                            |
@@ -58,8 +58,13 @@ Dotfiles are used to customize your system. The “dotfiles” name is derived f
 
 ### i3-gaps
 
-![i3-gaps preview](https://raw.githubusercontent.com/mnabila/dotfiles/master/preview/i3-wm%20preview.png)
+![i3-gaps and polybar preview](https://github.com/mnabila/dotfiles/blob/master/preview/i3gaps-and-polybar-preview.png?raw=true)
+![i3-gaps preview](https://github.com/mnabila/dotfiles/blob/master/preview/i3gaps-preview.png?raw=true)
 
 ### Tmux & neovim
 
-![tmux-nvim](https://raw.githubusercontent.com/mnabila/dotfiles/master/preview/tmux%20preview.png)
+![tmux-nvim](https://github.com/mnabila/dotfiles/blob/master/preview/tmux-preview.png?raw=true)
+
+### Zsh
+
+![zshrc and zimrc](https://github.com/mnabila/dotfiles/blob/master/preview/zsh-preview.png?raw=true)
