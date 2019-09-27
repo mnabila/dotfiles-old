@@ -9,13 +9,16 @@ ZIM_HOME=${ZDOTDIR:-${HOME}}/.zim
 [[ -s ${ZIM_HOME}/zimfw.zsh ]] && source ${ZIM_HOME}/zimfw.zsh
 
 # fzf
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f ~/.zsh/fzf.zsh ] && source ~/.zsh/fzf.zsh
 
 # aliases
 [ -f ~/.aliases ] && source ~/.aliases
 
+# completion
+fpath=(~/.zsh/completion $fpath)
+
 # heroku autocomplete setup
-# HEROKU_AC_ZSH_SETUP_PATH=${HOME}/.cache/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
+HEROKU_AC_ZSH_SETUP_PATH=${HOME}/.cache/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
 
 # Untuk merubah titlebar dari st terminal
 # Sumber: http://www.faqs.org/docs/Linux-mini/Xterm-Title.html#s5

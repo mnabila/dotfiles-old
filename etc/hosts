@@ -203,7 +203,7 @@ ff02::2 ip6-allrouters
 0.0.0.0   ravenjs.com
 0.0.0.0   redirector.gvt1.com
 0.0.0.0   rlcdn.com
-0.0.0.0   s.ytimg.com
+# 0.0.0.0   s.ytimg.com
 0.0.0.0   s0.2mdn.net
 0.0.0.0   search-api.fie.future.net.uk
 0.0.0.0   secure.insightexpressai.com

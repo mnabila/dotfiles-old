@@ -362,7 +362,7 @@ bindsym $mod+End exec --no-startup-id ~/.config/scripts/rofi-power
 bindsym $mod+o exec --no-startup-id i3-msg open
 
 # Arandr
-bindsym XF86Display exec --no-startup-id ~/.config/scripts/monitor_layout.sh
+bindsym XF86Display exec --no-startup-id ~/.config/scripts/monitor_layout
 bindsym $mod+F5 exec --no-startup-id arandr
 
 # TouchPad 
@@ -382,7 +382,8 @@ bindsym XF86Sleep exec --no-startup-id systemctl suspend
 bindsym $mod+F2 exec --no-startup-id $HOME/.config/scripts/udiskie-dmenu -fn "Iosevka-11" -nb "#282828" -nf "#ebdbb2" -sb "#d79921" -w "800" -x "300" -y "220" -p "Storage" -i -l 10
 
 # Network Maanger
-bindsym $mod+F8 exec --no-startup-id connman-gtk
+bindsym $mod+F8 exec --no-startup-id networkmanager_dmenu
+bindsym $mod+Shift+F8 exec --no-startup-id nm-connection-editor
 
 # Todo
 bindsym $mod+F10 exec --no-startup-id $HOME/.config/scripts/todo
@@ -400,6 +401,12 @@ bindsym $mod+Shift+b exec --no-startup-id $HOME/.config/polybar/launch.sh toggle
 bindsym $mod+b exec --no-startup-id polybar-msg cmd restart
 bindsym $mod+Shift+n exec --no-startup-id polybar-msg cmd toggle
 bindsym $mod+n exec --no-startup-id $HOME/.config/polybar/scripts/systray
+
+# Youtube Viewer
+bindsym $mod+y exec --no-startup-id $HOME/.config/scripts/ytview
+
+# viper restart
+bindsym $mod+Escape exec --no-startup-id viper restart
 
 #
 # COLORSCHEME #
@@ -463,6 +470,7 @@ for_window [class="qjackctl"] floating enable border normal
 for_window [class="PacketTracer7"] floating enable border normal
 for_window [class="Connman-gtk"] floating enable border normal
 for_window [class="Pulseaudio-equalizer-gtk"] floating enable border normal
+for_window [class="viper-gui"] floating enable border normal
 for_window [class="pgadmin4"] floating enable border normal
 
 # 
@@ -472,6 +480,7 @@ exec xfce4-power-manager
 exec xautolock -time 15 -locker i3lock-fancy
 
 exec --no-startup-id mpd
+exec --no-startup-id viper start
 exec --no-startup-id lxpolkit
 exec --no-startup-id udiskie
 exec --no-startup-id clipmenud

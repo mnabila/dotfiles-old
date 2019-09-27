@@ -1,11 +1,10 @@
 # vim: ft=sh
 
-#
-# Tools #
-#
-alias dir2iso="python ~/Project/tools/dir2iso.py"
 alias neofetch="neofetch --ascii ~/.config/neofetch/chess.txt"
 alias screencast="adb connect 192.168.43.1:5555; scrcpy -b 2M -m 1080 &"
+alias py="python"
+alias {vi,vim,nano,emacs}="nvim"
+alias pacman-mirror="reflector"
 
 #
 # yotube-viewer #
@@ -25,7 +24,6 @@ alias paczf="pacman -Qq | fzf --preview 'pacman -Qil {}' --layout=reverse --bind
 alias pacname="pacman -Sup --print-format \"%n\" | sort -n"
 alias pacurl="pacman -Sup | grep https"
 alias pacsize="pacman -Sup --print-format \"%s %n\" | sort -n"
-alias orphans="sudo pacman -Rns $(pacman -Qtdq)"
 
 # FZF alias
 alias fzfp="fzf --reverse --preview 'bat --style=numbers --color=always {}'"

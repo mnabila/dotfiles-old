@@ -117,6 +117,7 @@ c.url.searchengines = {
     "gt": "https://translate.google.com/#view=home&op=translate&sl=auto&tl=en&text={}",
     "mal": "https://myanimelist.net/search/all?q={}",
     "py": "https://pypi.org/search/?q={}",
+    "wp": "https://id.wikipedia.org/w/index.php?search={}",
     "yp": "https://yarnpkg.com/en/packages?q={}&p=1",
     "yt": "https://www.youtube.com/results?search_query={}",
 }
@@ -325,6 +326,10 @@ c.content.javascript.can_access_clipboard = True
 # Type: Bool
 c.content.javascript.can_open_tabs_automatically = True
 
+# Use the standard JavaScript modal dialog for alert() and confirm().
+# Type: Bool
+c.content.javascript.modal_dialog = True
+
 # Allow pdf.js to view PDF files in the browser.
 # Type: Bool
 c.content.pdfjs = False
@@ -341,7 +346,7 @@ c.content.dns_prefetch = True
 # it’s also possible to add a local file or directory via a file:// URL. In case of a directory, all files in the directory are read as adblock lists.
 # The file ~/.config/qutebrowser/blocked-hosts is always read if it exists.
 c.content.host_blocking.lists = [
-    "http://sbc.io/hosts/alternates/fakenews-gambling-porn-social/hosts"
+    "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts"
 ]
 
 # Default monospace fonts. Whenever "monospace" is used in a font setting, it’s replaced with the fonts listed here.
@@ -355,13 +360,12 @@ c.prompt.radius = 0
 # This setting supports URL patterns.
 # Type: Dict
 c.content.headers.custom = {
-    "user-agent": "Mozilla/5.0 (X11; Linux x86_64; rv:67.0) Gecko/20100101 Firefox/67.0"
+    "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36"
 }
 
 #
 # Keybinding
 #
 config.bind("gh", "home", "normal")
-config.bind("<Mod1-Space>m", "spawn mpv {url}", "normal")
 config.bind("<Ctrl-Shift-J>", "tab-move +", "normal")
 config.bind("<Ctrl-Shift-K>", "tab-move -", "normal")
