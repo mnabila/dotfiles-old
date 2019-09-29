@@ -1,0 +1,32 @@
+#!/bin/bash
+# File              : anime
+# License           : MIT License
+# Author            : M. Nabil Adani <macroid48@gmail.com>
+# Date              : Sabtu, 28/09/2019 22:10 WIB
+# Last Modified Date: Minggu, 29/09/2019 07:46 WIB
+# Last Modified By  : M. Nabil Adani <macroid48@gmail.com>
+
+OPTIONS="Mount Anime\nPlay Anime\nUmount Anime"
+LAUNCHER="dmenu -x 300 -y 220 -w 800 -fn Iosevka-11 -p Anime -l 10 -i"
+
+function mount(){
+  fuseiso -p "$(find ~/Anime/*/* -iname '*.iso'|$LAUNCHER)" /tmp/mount
+  play
+}
+
+function umount(){
+  fusermount -u /tmp/mount
+}
+
+function play(){
+  mpv -vo xv "$(ls /tmp/mount/*/* | $LAUNCHER)"
+}
+
+
+case "$(echo -e $OPTIONS|$LAUNCHER)" in
+  "Mount Anime")  mount;;
+  "Play Anime")  play;;
+  "Umount Anime")  umount;;
+  * )             echo "Perintah tidak tersedia"
+    exit 2
+esac

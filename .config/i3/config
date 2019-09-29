@@ -356,13 +356,13 @@ bindsym $mod+p exec --no-startup-id clipmenu
 bindsym $mod+Shift+p exec --no-startup-id rm -rf /tmp/clipmenu/*
 
 # Restart, Suspend, Shutdown, Logout Dialog
-bindsym $mod+End exec --no-startup-id ~/.config/scripts/rofi-power
+bindsym $mod+End exec --no-startup-id ~/.config/scripts/dmenu_power
 
 # Blank space under i3
 bindsym $mod+o exec --no-startup-id i3-msg open
 
 # Arandr
-bindsym XF86Display exec --no-startup-id ~/.config/scripts/monitor_layout
+bindsym XF86Display exec --no-startup-id ~/.config/scripts/dmenu_monitor
 bindsym $mod+F5 exec --no-startup-id arandr
 
 # TouchPad 
@@ -379,17 +379,17 @@ bindsym XF86Sleep exec --no-startup-id systemctl suspend
 # bindsym XF86Suspend exec --no-startup-id systemctl hibernate
 
 # Udiskie
-bindsym $mod+F2 exec --no-startup-id $HOME/.config/scripts/udiskie-dmenu -fn "Iosevka-11" -nb "#282828" -nf "#ebdbb2" -sb "#d79921" -w "800" -x "300" -y "220" -p "Storage" -i -l 10
+bindsym $mod+F2 exec --no-startup-id $HOME/.config/scripts/dmenu_udiskie -fn "Iosevka-11" -nb "#282828" -nf "#ebdbb2" -sb "#d79921" -w "800" -x "300" -y "220" -p "Storage" -i -l 10
 
 # Network Maanger
 bindsym $mod+F8 exec --no-startup-id networkmanager_dmenu
 bindsym $mod+Shift+F8 exec --no-startup-id nm-connection-editor
 
 # Todo
-bindsym $mod+F10 exec --no-startup-id $HOME/.config/scripts/todo
+bindsym $mod+F10 exec --no-startup-id $HOME/.config/scripts/dmenu_todo
 
 # Mpdmenu
-bindsym $mod+F11 exec --no-startup-id $HOME/.config/scripts/mpdmenu
+bindsym $mod+F11 exec --no-startup-id $HOME/.config/scripts/dmenu_mpdmenu
 
 # Mpc
 bindsym $mod+Pause exec --no-startup-id mpc toggle
@@ -403,10 +403,13 @@ bindsym $mod+Shift+n exec --no-startup-id polybar-msg cmd toggle
 bindsym $mod+n exec --no-startup-id $HOME/.config/polybar/scripts/systray
 
 # Youtube Viewer
-bindsym $mod+y exec --no-startup-id $HOME/.config/scripts/ytview
+bindsym $mod+y exec --no-startup-id $HOME/.config/scripts/dmenu_ytview
 
 # viper restart
 bindsym $mod+Escape exec --no-startup-id viper restart
+
+# Anime MPV
+bindsym $mod+F1 exec --no-startup-id $HOME/.config/scripts/dmenu_anime
 
 #
 # COLORSCHEME #
