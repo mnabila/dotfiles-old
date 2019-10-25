@@ -30,7 +30,8 @@ function start() {
       MONITOR=$m polybar --reload -c $HOME/.config/polybar/config.ini systray &
     done
   else
-    polybar --reload main &
+    polybar --reload botton &
+    polybar --reload systray &
   fi
 }
 

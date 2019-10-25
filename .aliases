@@ -3,8 +3,9 @@
 alias neofetch="neofetch --ascii ~/.config/neofetch/chess.txt"
 alias screencast="adb connect 192.168.43.1:5555; scrcpy -b 2M -m 1080 &"
 alias py="python"
-alias {vi,vim,nano,emacs}="nvim"
+alias {vi,vim,nano}="nvim"
 alias pacman-mirror="reflector"
+alias :q="exit"
 
 #
 # yotube-viewer #

@@ -4,6 +4,8 @@
 #   qute://help/settings.html
 
 # load plugin
+import sys
+import os
 from xresources import read_xresources
 
 xresources = read_xresources("*")
@@ -105,13 +107,13 @@ c.url.default_page = "about:blank"
 # `:open google qutebrowser`.
 # Type: Dict
 c.url.searchengines = {
-    "DEFAULT": "https://www.google.com/search?hl=en&q={}",
+    "DEFAULT": "https://duckduckgo.com/?q={}",
     "ag": "http://anigrab.herokuapp.com/?keyword={}",
     "au": "https://aur.archlinux.org/packages/?O=0&K={}",
     "aw": "https://wiki.archlinux.org/?search={}",
-    "d": "https://duckduckgo.com/?q={}",
     "da": "http://www.deviantart.com/?q={}",
     "dz": "https://www.deezer.com/search/{}",
+    "g": "https://www.google.com/search?hl=en&q={}",
     "gh": "https://github.com/search?q={}",
     "gl": "https://gitlab.com/search?search={}",
     "gt": "https://translate.google.com/#view=home&op=translate&sl=auto&tl=en&text={}",
@@ -124,7 +126,7 @@ c.url.searchengines = {
 
 # Page(s) to open at the start.
 # Type: List of FuzzyUrl, or FuzzyUrl
-c.url.start_pages = "file:///home/nabil/.config/qutebrowser/startpage/vogeltak/index.html"
+c.url.start_pages = "about:blank"
 
 # Text color of the completion widget. May be a single color to use for all columns or a list of three colors, one for each column.
 # Type: List of QtColor, or QtColor
@@ -348,9 +350,17 @@ c.content.dns_prefetch = True
 c.content.host_blocking.lists = [
     "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts"
 ]
+# Enable host blocking.
+# This setting supports URL patterns.
+# Type: Bool
+c.content.host_blocking.enabled = False
 
 # Default monospace fonts. Whenever "monospace" is used in a font setting, it’s replaced with the fonts listed here.
 c.fonts.monospace = '"Iosevka","xos4 Terminus", "Terminus", "Monospace", "DejaVu Sans Mono", "Monaco", "Bitstream Vera Sans Mono", "Andale Mono", "Courier New", "Courier", "Liberation Mono", "monospace", "Fixed", "Consolas", "Terminal"'
+
+# Font used for prompts.
+# Type: Font
+c.fonts.prompts = "10pt monospace"
 
 # Rounding radius (in pixels) for the edges of prompts.
 # Type: int
@@ -360,7 +370,8 @@ c.prompt.radius = 0
 # This setting supports URL patterns.
 # Type: Dict
 c.content.headers.custom = {
-    "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36"
+    "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36",
+    "DNT": "1",
 }
 
 #
@@ -369,3 +380,26 @@ c.content.headers.custom = {
 config.bind("gh", "home", "normal")
 config.bind("<Ctrl-Shift-J>", "tab-move +", "normal")
 config.bind("<Ctrl-Shift-K>", "tab-move -", "normal")
+
+#
+# Plugins
+#
+# Jblock
+sys.path.append(os.path.join(sys.path[0], "jblock"))
+config.set(
+    "content.host_blocking.lists",
+    [
+        "https://easylist.to/easylist/easylist.txt",
+        "https://easylist.to/easylist/easyprivacy.txt",
+        "https://easylist.to/easylist/fanboy-annoyance.txt",
+        "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters.txt",
+        "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/annoyances.txt",
+        "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/badware.txt",
+        "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/privacy.txt",
+        "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/resource-abuse.txt",
+        "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/unbreak.txt",
+        "https://www.malwaredomainlist.com/hostslist/hosts.txt",
+        "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=1&mimetype=plaintext",
+        "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts",
+    ],
+)

@@ -3,7 +3,11 @@
 ################
 
 # Set input mode to 'emacs' (default) or 'vi'.
-zstyle ':zim:input' mode 'emacs'
+zstyle ':zim:input' mode 'vi'
+
+# Vi mode keybinding to open nvim
+autoload edit-command-line; zle -N edit-command-line
+bindkey -M vicmd e edit-command-line
 
 # Select what modules you would like enabled. Modules are sourced in the order given.
 # zstyle ':zim' modules directory environment git git-info history input utility zsh-completions completion zsh-autosuggestions zsh-syntax-highlighting history-substring-search async pure
@@ -42,8 +46,8 @@ MNML_NOMRAL_CHAR='❰❰❰'
 MNML_INSERT_CHAR='❱❱❱'
 
 MNML_PROMPT=(mnml_ssh mnml_pyenv mnml_status mnml_keymap)
-MNML_RPROMPT=('mnml_cwd 2 0' mnml_git)
-MNML_INFOLN=()
+MNML_RPROMPT=('mnml_cwd 3 0' mnml_git)
+MNML_INFOLN=(mnml_me_ls mnml_me_git)
 # }}}
 
 # Change prompt color
