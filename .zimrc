@@ -3,11 +3,8 @@
 ################
 
 # Set input mode to 'emacs' (default) or 'vi'.
-zstyle ':zim:input' mode 'vi'
+zstyle ':zim:input' mode 'emacs'
 
-# Vi mode keybinding to open nvim
-autoload edit-command-line; zle -N edit-command-line
-bindkey -M vicmd e edit-command-line
 
 # Select what modules you would like enabled. Modules are sourced in the order given.
 # zstyle ':zim' modules directory environment git git-info history input utility zsh-completions completion zsh-autosuggestions zsh-syntax-highlighting history-substring-search async pure
@@ -120,3 +117,10 @@ ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern)
 typeset -A ZSH_HIGHLIGHT_STYLES
 ZSH_HIGHLIGHT_STYLES[comment]='fg=8'
 
+#
+# Keybindings
+#
+
+# Vi mode keybinding to open nvim
+autoload edit-command-line; zle -N edit-command-line
+bindkey -M vicmd e edit-command-line

@@ -42,7 +42,7 @@ DMENU="dmenu -x 300 -y 220 -w 800 -fn Iosevka-11 -l 10 -i -p Qute"
 QUTE_CONFIG_DIR="$HOME/.config/qutebrowser"
 
 # url=$(echo "$QUTE_URL" | cat - "$QUTE_CONFIG_DIR/quickmarks" "$QUTE_DATA_DIR/history" | $DMENU)
-url=$(echo "$QUTE_URL" | cat - "$QUTE_CONFIG_DIR/quickmarks" "$QUTE_CONFIG_DIR/bookmarks/urls" | $DMENU)
+url=$(echo "$QUTE_URL" | sqlite3 "$HOME/.local/share/qutebrowser/history.sqlite" 'SELECT DISTINCT url FROM History ASC' | cat - "$QUTE_CONFIG_DIR/quickmarks" "$QUTE_CONFIG_DIR/bookmarks/urls"| $DMENU)
 url=$(echo "$url" | sed -E 's/[^ ]+ +//g' | grep -E "https?:" || echo "$url")
 
 [ -z "${url// }" ] && exit

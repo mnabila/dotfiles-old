@@ -9,10 +9,13 @@ function set_env_vars() {
   export HWMON_PATH
 
   ETH_INTERFACE=$(ip link show | grep enp | sed 's/.*: \(.*\):.*/\1/')
-  WLAN_INTERFACE=$(ip link show | grep wlp | sed 's/.*: \(.*\):.*/\1/')
+  WLAN_INTERFACE=$(ip link show | grep wl | sed 's/.*: \(.*\):.*/\1/')
   DEFAULT_INTERFACE=$(ip route | grep '^default' | awk '{print $5}')
   HWMON_PATH=$(for i in /sys/class/hwmon/hwmon*/temp*_input; do echo "$(<$(dirname $i)/name): $(cat ${i%_*}_label 2>/dev/null || echo $(basename ${i%_*})) $(readlink -f $i)"; done | awk "END {print}" | cut -d " " -f 3)
 
+  echo $ETH_INTERFACE
+  echo $WLAN_INTERFACE
+  echo $DEFAULT_INTERFACE
   echo $HWMON_PATH
 }
 

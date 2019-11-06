@@ -348,12 +348,14 @@ c.content.dns_prefetch = True
 # it’s also possible to add a local file or directory via a file:// URL. In case of a directory, all files in the directory are read as adblock lists.
 # The file ~/.config/qutebrowser/blocked-hosts is always read if it exists.
 c.content.host_blocking.lists = [
-    "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts"
+    "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts",
+    "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=1&mimetype=plaintext",
+    "https://www.malwaredomainlist.com/hostslist/hosts.txt",
 ]
 # Enable host blocking.
 # This setting supports URL patterns.
 # Type: Bool
-c.content.host_blocking.enabled = False
+c.content.host_blocking.enabled = True
 
 # Default monospace fonts. Whenever "monospace" is used in a font setting, it’s replaced with the fonts listed here.
 c.fonts.monospace = '"Iosevka","xos4 Terminus", "Terminus", "Monospace", "DejaVu Sans Mono", "Monaco", "Bitstream Vera Sans Mono", "Andale Mono", "Courier New", "Courier", "Liberation Mono", "monospace", "Fixed", "Consolas", "Terminal"'
@@ -380,26 +382,3 @@ c.content.headers.custom = {
 config.bind("gh", "home", "normal")
 config.bind("<Ctrl-Shift-J>", "tab-move +", "normal")
 config.bind("<Ctrl-Shift-K>", "tab-move -", "normal")
-
-#
-# Plugins
-#
-# Jblock
-sys.path.append(os.path.join(sys.path[0], "jblock"))
-config.set(
-    "content.host_blocking.lists",
-    [
-        "https://easylist.to/easylist/easylist.txt",
-        "https://easylist.to/easylist/easyprivacy.txt",
-        "https://easylist.to/easylist/fanboy-annoyance.txt",
-        "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters.txt",
-        "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/annoyances.txt",
-        "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/badware.txt",
-        "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/privacy.txt",
-        "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/resource-abuse.txt",
-        "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/unbreak.txt",
-        "https://www.malwaredomainlist.com/hostslist/hosts.txt",
-        "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=1&mimetype=plaintext",
-        "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts",
-    ],
-)

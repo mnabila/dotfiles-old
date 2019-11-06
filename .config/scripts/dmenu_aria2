@@ -1,0 +1,21 @@
+#!/bin/bash
+# File              : dmenu_aria2
+# License           : MIT License
+# Author            : M. Nabil Adani <macroid48@gmail.com>
+# Date              : Rabu, 06/11/2019 04:51 WIB
+# Last Modified Date: Rabu, 06/11/2019 17:55 WIB
+# Last Modified By  : M. Nabil Adani <macroid48@gmail.com>
+
+
+
+HOST="http://172.0.0.1"
+PORT="6800"
+SECRET="**********"
+DMENU="dmenu -x 300 -y 220 -w 800 -fn Iosevka-11 -l 5 -i -p Aria2"
+
+url=$(cat /tmp/clipmenu/*/line_cache_clipboard | cut -c 21- | grep -Po '(http|https|ftp|ftps):\/\/\w.+' | sort -r | $DMENU)
+if [[ ! -z $url ]]; then
+  # aria2p -H \"$HOST\" -p $PORT -s "$SECRET" call addUri -J "'[[\"$url\"]]'" | sh
+  # aria2p -s "$SECRET" call addUri -J \'[[\"$url\"]]\'
+  aria2p call addUri -J \'[[\"$url\"]]\'
+fi

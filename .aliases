@@ -1,3 +1,4 @@
+#!/bin/sh
 # vim: ft=sh
 
 alias neofetch="neofetch --ascii ~/.config/neofetch/chess.txt"

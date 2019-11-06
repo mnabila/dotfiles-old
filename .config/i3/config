@@ -339,6 +339,11 @@ bindsym $mod+Shift+g mode "$mode_gaps"
 # USERS KEYBINDINS #
 #
 
+# Disable Some Keys 
+bindsym button4 nop
+bindsym button5 nop
+bindsym XF86Suspend nop
+
 # Amixer audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer set Master 5%+ #increase sound volume
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer set Master 5%-  #decrease sound volume
@@ -413,14 +418,16 @@ bindsym $mod+Escape exec --no-startup-id viper restart
 bindsym $mod+F1 exec --no-startup-id $HOME/.config/scripts/dmenu_anime
 
 # Rofi Top
-bindsym $mod+Shift+End exec --no-startup-id $HOME/.config/scripts/dmenu_kill
-
-# Disable Scroll 
-bindsym button4 nop
-bindsym button5 nop
+bindsym $mod+Delete exec --no-startup-id $HOME/.config/scripts/dmenu_kill
 
 # dmenu_qutebrowser
 bindsym $mod+q exec --no-startup-id $HOME/.config/scripts/dmenu_qutebrowser
+
+# dmenu_record
+bindsym $mod+Home exec --no-startup-id $HOME/.config/scripts/dmenu_record
+
+# dmenu_aria2
+bindsym $mod+o exec --no-startup-id $HOME/.config/scripts/dmenu_aria2
 
 #
 # COLORSCHEME #
@@ -487,6 +494,7 @@ for_window [class="Pulseaudio-equalizer-gtk"] floating enable border normal
 for_window [class="viper-gui"] floating enable border normal
 for_window [class="pgadmin4"] floating enable border normal
 for_window [class="mpv"] border pixel 1
+for_window [class="PPSSPPSDL"] border pixel 1
 
 # 
 # AUTORUNS #
@@ -504,4 +512,4 @@ exec --no-startup-id xbacklight -set 40
 exec --no-startup-id $HOME/.config/polybar/launch.sh start
 
 exec_always killall compton; compton --dbus -b
-exec_always feh --bg-scale "$HOME/Pictures/winxp.jpg"
+exec_always feh --bg-scale "$HOME/Pictures/digital art/wallhaven-zm9kpy2.jpg"
