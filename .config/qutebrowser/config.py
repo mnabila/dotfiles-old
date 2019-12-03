@@ -22,6 +22,9 @@ c.aliases = {
     "w": "session-save",
     "wq": "quit --save",
     "wqa": "quit --save",
+    "tor-proxy": "set content.proxy socks://127.0.0.1:9050",
+    "system-proxy": "set content.proxy system",
+    "settings": "open -t qute://settings"
 }
 
 # Enable JavaScript.
@@ -116,7 +119,8 @@ c.url.searchengines = {
     "g": "https://www.google.com/search?hl=en&q={}",
     "gh": "https://github.com/search?q={}",
     "gl": "https://gitlab.com/search?search={}",
-    "gt": "https://translate.google.com/#view=home&op=translate&sl=auto&tl=en&text={}",
+    "gten": "https://translate.google.com/#view=home&op=translate&sl=auto&tl=en&text={}",
+    "gtid": "https://translate.google.com/#view=home&op=translate&sl=auto&tl=id&text={}",
     "mal": "https://myanimelist.net/search/all?q={}",
     "py": "https://pypi.org/search/?q={}",
     "wp": "https://id.wikipedia.org/w/index.php?search={}",
@@ -356,6 +360,10 @@ c.content.host_blocking.lists = [
 # This setting supports URL patterns.
 # Type: Bool
 c.content.host_blocking.enabled = True
+
+# Proxy to use. In addition to the listed values, you can use a socks://... or http://... URL.
+# Type: Proxy
+# c.content.proxy ="socks://127.0.0.1:9050"
 
 # Default monospace fonts. Whenever "monospace" is used in a font setting, it’s replaced with the fonts listed here.
 c.fonts.monospace = '"Iosevka","xos4 Terminus", "Terminus", "Monospace", "DejaVu Sans Mono", "Monaco", "Bitstream Vera Sans Mono", "Andale Mono", "Courier New", "Courier", "Liberation Mono", "monospace", "Fixed", "Consolas", "Terminal"'

@@ -427,7 +427,10 @@ bindsym $mod+q exec --no-startup-id $HOME/.config/scripts/dmenu_qutebrowser
 bindsym $mod+Home exec --no-startup-id $HOME/.config/scripts/dmenu_record
 
 # dmenu_aria2
-bindsym $mod+o exec --no-startup-id $HOME/.config/scripts/dmenu_aria2
+bindsym $mod+u exec --no-startup-id $HOME/.config/scripts/dmenu_aria2
+
+# dmenu_boottester
+bindsym $mod+F12 exec --no-startup-id $HOME/.config/scripts/dmenu_boottester
 
 #
 # COLORSCHEME #
@@ -495,6 +498,7 @@ for_window [class="viper-gui"] floating enable border normal
 for_window [class="pgadmin4"] floating enable border normal
 for_window [class="mpv"] border pixel 1
 for_window [class="PPSSPPSDL"] border pixel 1
+for_window [class="Gcolor3"] floating enable border normal
 
 # 
 # AUTORUNS #
@@ -508,8 +512,8 @@ exec --no-startup-id lxpolkit
 exec --no-startup-id udiskie
 exec --no-startup-id clipmenud
 exec --no-startup-id jgmenu
-exec --no-startup-id xbacklight -set 40
+exec --no-startup-id xbacklight -set 30
 exec --no-startup-id $HOME/.config/polybar/launch.sh start
 
 exec_always killall compton; compton --dbus -b
-exec_always feh --bg-scale "$HOME/Pictures/digital art/wallhaven-zm9kpy2.jpg"
+exec_always feh --bg-scale "$HOME/Pictures/anime/blend-s-mafuyu-hoshikawa-uhd-4k-wallpaper.jpg"

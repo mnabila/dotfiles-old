@@ -7,6 +7,9 @@
 # Last Modified By  : M. Nabil Adani <macroid48@gmail.com>
 
 
+# required 
+# 1. aria2p (https://github.com/pawamoy/aria2p)
+# 2. clipmenu (https://github.com/cdown/clipmenu)
 
 DMENU="dmenu -x 300 -y 220 -w 800 -fn Iosevka-11 -l 5 -i -p Aria2"
 

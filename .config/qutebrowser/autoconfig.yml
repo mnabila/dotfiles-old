@@ -6,5 +6,5 @@
 
 config_version: 2
 settings:
-  content.headers.do_not_track:
-    global: null
+  content.proxy:
+    global: system
