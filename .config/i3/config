@@ -515,5 +515,5 @@ exec --no-startup-id jgmenu
 exec --no-startup-id xbacklight -set 30
 exec --no-startup-id $HOME/.config/polybar/launch.sh start
 
-exec_always killall compton; compton --dbus -b
+exec_always killall picom; picom --dbus -b
 exec_always feh --bg-scale "$HOME/Pictures/anime/blend-s-mafuyu-hoshikawa-uhd-4k-wallpaper.jpg"
