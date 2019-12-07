@@ -206,7 +206,7 @@ c.colors.messages.warning.fg = xresources["*color0"]
 
 # Background color of a warning message.
 # Type: QssColor
-c.colors.messages.warning.bg = xresources["*color11"]
+c.colors.messages.warning.bg = xresources["*color3"]
 
 # Foreground color of an info message.
 # Type: QssColor
@@ -215,6 +215,14 @@ c.colors.messages.info.fg = xresources["*color15"]
 # Background color of an info message.
 # Type: QssColor
 c.colors.messages.info.bg = xresources["*color0"]
+
+# Foreground color of an error message.
+# Type: QssColor
+c.colors.messages.error.fg = xresources["*color15"]
+
+# Background color of an error message.
+# Type: QssColor
+c.colors.messages.error.bg = xresources["*color1"]
 
 # Border used around UI elements in prompts.
 # Type: String
