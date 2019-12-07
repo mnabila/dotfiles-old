@@ -6,5 +6,627 @@
 
 config_version: 2
 settings:
+  aliases:
+    global:
+      q: close
+      qa: quit
+      w: session-save
+      wq: quit --save
+      wqa: quit --save
+  auto_save.interval:
+    global: 15000
+  auto_save.session:
+    global: false
+  backend:
+    global: webengine
+  bindings.commands:
+    global: null
+  bindings.key_mappings:
+    global:
+      <Ctrl-6>: <Ctrl-^>
+      <Ctrl-Enter>: <Ctrl-Return>
+      <Ctrl-J>: <Return>
+      <Ctrl-M>: <Return>
+      <Ctrl-[>: <Escape>
+      <Enter>: <Return>
+      <Shift-Enter>: <Return>
+      <Shift-Return>: <Return>
+  colors.completion.category.bg:
+    global: 'qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #888888, stop:1 #505050)'
+  colors.completion.category.border.bottom:
+    global: black
+  colors.completion.category.border.top:
+    global: black
+  colors.completion.category.fg:
+    global: white
+  colors.completion.even.bg:
+    global: '#333333'
+  colors.completion.fg:
+    global:
+    - white
+    - white
+    - white
+  colors.completion.item.selected.bg:
+    global: '#e8c000'
+  colors.completion.item.selected.border.bottom:
+    global: '#bbbb00'
+  colors.completion.item.selected.border.top:
+    global: '#bbbb00'
+  colors.completion.item.selected.fg:
+    global: black
+  colors.completion.item.selected.match.fg:
+    global: '#ff4444'
+  colors.completion.match.fg:
+    global: '#ff4444'
+  colors.completion.odd.bg:
+    global: '#444444'
+  colors.completion.scrollbar.bg:
+    global: '#333333'
+  colors.completion.scrollbar.fg:
+    global: white
+  colors.downloads.bar.bg:
+    global: black
+  colors.downloads.error.bg:
+    global: red
+  colors.downloads.error.fg:
+    global: white
+  colors.downloads.start.bg:
+    global: '#0000aa'
+  colors.downloads.start.fg:
+    global: white
+  colors.downloads.stop.bg:
+    global: '#00aa00'
+  colors.downloads.stop.fg:
+    global: white
+  colors.downloads.system.bg:
+    global: rgb
+  colors.downloads.system.fg:
+    global: rgb
+  colors.hints.bg:
+    global: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 247, 133, 0.8),
+      stop:1 rgba(255, 197, 66, 0.8))
+  colors.hints.fg:
+    global: black
+  colors.hints.match.fg:
+    global: green
+  colors.keyhint.bg:
+    global: rgba(0, 0, 0, 80%)
+  colors.keyhint.fg:
+    global: '#FFFFFF'
+  colors.keyhint.suffix.fg:
+    global: '#FFFF00'
+  colors.messages.error.bg:
+    global: red
+  colors.messages.error.border:
+    global: '#bb0000'
+  colors.messages.error.fg:
+    global: white
+  colors.messages.info.bg:
+    global: black
+  colors.messages.info.border:
+    global: '#333333'
+  colors.messages.info.fg:
+    global: white
+  colors.messages.warning.bg:
+    global: darkorange
+  colors.messages.warning.border:
+    global: '#d47300'
+  colors.messages.warning.fg:
+    global: white
+  colors.prompts.bg:
+    global: '#444444'
+  colors.prompts.border:
+    global: 1px solid gray
+  colors.prompts.fg:
+    global: white
+  colors.prompts.selected.bg:
+    global: grey
+  colors.statusbar.caret.bg:
+    global: purple
+  colors.statusbar.caret.fg:
+    global: white
+  colors.statusbar.caret.selection.bg:
+    global: '#a12dff'
+  colors.statusbar.caret.selection.fg:
+    global: white
+  colors.statusbar.command.bg:
+    global: black
+  colors.statusbar.command.fg:
+    global: white
+  colors.statusbar.command.private.bg:
+    global: grey
+  colors.statusbar.command.private.fg:
+    global: white
+  colors.statusbar.insert.bg:
+    global: darkgreen
+  colors.statusbar.insert.fg:
+    global: white
+  colors.statusbar.normal.bg:
+    global: black
+  colors.statusbar.normal.fg:
+    global: white
+  colors.statusbar.passthrough.bg:
+    global: darkblue
+  colors.statusbar.passthrough.fg:
+    global: white
+  colors.statusbar.private.bg:
+    global: '#666666'
+  colors.statusbar.private.fg:
+    global: white
+  colors.statusbar.progress.bg:
+    global: white
+  colors.statusbar.url.error.fg:
+    global: orange
+  colors.statusbar.url.fg:
+    global: white
+  colors.statusbar.url.hover.fg:
+    global: aqua
+  colors.statusbar.url.success.http.fg:
+    global: white
+  colors.statusbar.url.success.https.fg:
+    global: lime
+  colors.statusbar.url.warn.fg:
+    global: yellow
+  colors.tabs.bar.bg:
+    global: '#555555'
+  colors.tabs.even.bg:
+    global: darkgrey
+  colors.tabs.even.fg:
+    global: white
+  colors.tabs.indicator.error:
+    global: '#ff0000'
+  colors.tabs.indicator.start:
+    global: '#0000aa'
+  colors.tabs.indicator.stop:
+    global: '#00aa00'
+  colors.tabs.indicator.system:
+    global: rgb
+  colors.tabs.odd.bg:
+    global: grey
+  colors.tabs.odd.fg:
+    global: white
+  colors.tabs.pinned.even.bg:
+    global: darkseagreen
+  colors.tabs.pinned.even.fg:
+    global: white
+  colors.tabs.pinned.odd.bg:
+    global: seagreen
+  colors.tabs.pinned.odd.fg:
+    global: white
+  colors.tabs.pinned.selected.even.bg:
+    global: black
+  colors.tabs.pinned.selected.even.fg:
+    global: white
+  colors.tabs.pinned.selected.odd.bg:
+    global: black
+  colors.tabs.pinned.selected.odd.fg:
+    global: white
+  colors.tabs.selected.even.bg:
+    global: black
+  colors.tabs.selected.even.fg:
+    global: white
+  colors.tabs.selected.odd.bg:
+    global: black
+  colors.tabs.selected.odd.fg:
+    global: white
+  colors.webpage.bg:
+    global: white
+  completion.cmd_history_max_items:
+    global: 100
+  completion.delay:
+    global: 0
+  completion.height:
+    global: 50%
+  completion.min_chars:
+    global: 1
+  completion.open_categories:
+    global:
+    - searchengines
+    - quickmarks
+    - bookmarks
+    - history
+  completion.quick:
+    global: true
+  completion.scrollbar.padding:
+    global: 2
+  completion.scrollbar.width:
+    global: 12
+  completion.show:
+    global: always
+  completion.shrink:
+    global: false
+  completion.timestamp_format:
+    global: '%Y-%m-%d'
+  completion.use_best_match:
+    global: false
+  completion.web_history.exclude:
+    global: null
+  completion.web_history.max_items:
+    global: -1
+  confirm_quit:
+    global:
+    - never
+  content.autoplay:
+    global: true
+  content.cache.size:
+    global: null
+  content.canvas_reading:
+    global: true
+  content.cookies.accept:
+    global: all
+  content.cookies.store:
+    global: true
+  content.default_encoding:
+    global: iso-8859-1
+  content.desktop_capture:
+    global: ask
+  content.dns_prefetch:
+    global: false
+  content.geolocation:
+    global: ask
+  content.headers.accept_language:
+    global: en-US,en
+  content.headers.custom:
+    global: null
+  content.headers.do_not_track:
+    global: true
+  content.headers.referer:
+    global: same-domain
+  content.headers.user_agent:
+    global: null
+  content.host_blocking.enabled:
+    global: true
+  content.host_blocking.lists:
+    global:
+    - https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
+  content.host_blocking.whitelist:
+    global: null
+  content.hyperlink_auditing:
+    global: false
+  content.images:
+    global: true
+  content.javascript.alert:
+    global: true
+  content.javascript.can_access_clipboard:
+    global: false
+  content.javascript.can_open_tabs_automatically:
+    global: false
+  content.javascript.enabled:
+    global: true
+  content.javascript.log:
+    global:
+      error: debug
+      info: debug
+      unknown: debug
+      warning: debug
+  content.javascript.modal_dialog:
+    global: false
+  content.javascript.prompt:
+    global: true
+  content.local_content_can_access_file_urls:
+    global: true
+  content.local_content_can_access_remote_urls:
+    global: false
+  content.local_storage:
+    global: true
+  content.media_capture:
+    global: ask
+  content.mouse_lock:
+    global: ask
+  content.mute:
+    global: false
+  content.netrc_file:
+    global: null
+  content.notifications:
+    global: ask
+  content.pdfjs:
+    global: false
+  content.persistent_storage:
+    global: ask
+  content.plugins:
+    global: false
+  content.print_element_backgrounds:
+    global: true
+  content.private_browsing:
+    global: false
   content.proxy:
     global: system
+  content.register_protocol_handler:
+    global: ask
+  content.ssl_strict:
+    global: ask
+  content.user_stylesheets:
+    global: null
+  content.webgl:
+    global: true
+  content.webrtc_ip_handling_policy:
+    global: all-interfaces
+  content.windowed_fullscreen:
+    global: false
+  content.xss_auditing:
+    global: false
+  downloads.location.directory:
+    global: null
+  downloads.location.prompt:
+    global: true
+  downloads.location.remember:
+    global: true
+  downloads.location.suggestion:
+    global: path
+  downloads.open_dispatcher:
+    global: null
+  downloads.position:
+    global: top
+  downloads.remove_finished:
+    global: -1
+  editor.command:
+    global:
+    - gvim
+    - -f
+    - '{file}'
+    - -c
+    - normal {line}G{column0}l
+  editor.encoding:
+    global: utf-8
+  fonts.completion.category:
+    global: bold 10pt monospace
+  fonts.completion.entry:
+    global: 10pt monospace
+  fonts.debug_console:
+    global: 10pt monospace
+  fonts.downloads:
+    global: 10pt monospace
+  fonts.hints:
+    global: bold 10pt monospace
+  fonts.keyhint:
+    global: 10pt monospace
+  fonts.messages.error:
+    global: 10pt monospace
+  fonts.messages.info:
+    global: 10pt monospace
+  fonts.messages.warning:
+    global: 10pt monospace
+  fonts.monospace:
+    global: '"xos4 Terminus", Terminus, Monospace, "DejaVu Sans Mono", Monaco, "Bitstream
+      Vera Sans Mono", "Andale Mono", "Courier New", Courier, "Liberation Mono", monospace,
+      Fixed, Consolas, Terminal'
+  fonts.prompts:
+    global: 10pt sans-serif
+  fonts.statusbar:
+    global: 10pt monospace
+  fonts.tabs:
+    global: 10pt monospace
+  fonts.web.family.cursive:
+    global: null
+  fonts.web.family.fantasy:
+    global: null
+  fonts.web.family.fixed:
+    global: null
+  fonts.web.family.sans_serif:
+    global: null
+  fonts.web.family.serif:
+    global: null
+  fonts.web.family.standard:
+    global: null
+  fonts.web.size.default:
+    global: 16
+  fonts.web.size.default_fixed:
+    global: 13
+  fonts.web.size.minimum:
+    global: 0
+  fonts.web.size.minimum_logical:
+    global: 6
+  hints.auto_follow:
+    global: unique-match
+  hints.auto_follow_timeout:
+    global: 0
+  hints.border:
+    global: '1px solid #E3BE23'
+  hints.chars:
+    global: asdfghjkl
+  hints.dictionary:
+    global: /usr/share/dict/words
+  hints.hide_unmatched_rapid_hints:
+    global: true
+  hints.leave_on_load:
+    global: true
+  hints.min_chars:
+    global: 1
+  hints.mode:
+    global: letter
+  hints.next_regexes:
+    global:
+    - \bnext\b
+    - \bmore\b
+    - \bnewer\b
+    - \b[>→≫]\b
+    - \b(>>|»)\b
+    - \bcontinue\b
+  hints.prev_regexes:
+    global:
+    - \bprev(ious)?\b
+    - \bback\b
+    - \bolder\b
+    - \b[<←≪]\b
+    - \b(<<|«)\b
+  hints.scatter:
+    global: true
+  hints.uppercase:
+    global: false
+  history_gap_interval:
+    global: 30
+  input.escape_quits_reporter:
+    global: true
+  input.forward_unbound_keys:
+    global: auto
+  input.insert_mode.auto_enter:
+    global: true
+  input.insert_mode.auto_leave:
+    global: true
+  input.insert_mode.auto_load:
+    global: false
+  input.insert_mode.leave_on_load:
+    global: true
+  input.insert_mode.plugins:
+    global: false
+  input.links_included_in_focus_chain:
+    global: true
+  input.partial_timeout:
+    global: 5000
+  input.rocker_gestures:
+    global: false
+  input.spatial_navigation:
+    global: false
+  keyhint.blacklist:
+    global: null
+  keyhint.delay:
+    global: 500
+  keyhint.radius:
+    global: 6
+  messages.timeout:
+    global: 2000
+  new_instance_open_target:
+    global: tab
+  new_instance_open_target_window:
+    global: last-focused
+  prompt.filebrowser:
+    global: true
+  prompt.radius:
+    global: 8
+  qt.args:
+    global: null
+  qt.force_platform:
+    global: null
+  qt.force_software_rendering:
+    global: none
+  qt.highdpi:
+    global: false
+  qt.low_end_device_mode:
+    global: auto
+  qt.process_model:
+    global: process-per-site-instance
+  scrolling.bar:
+    global: when-searching
+  scrolling.smooth:
+    global: false
+  search.ignore_case:
+    global: smart
+  search.incremental:
+    global: true
+  session.default_name:
+    global: null
+  session.lazy_restore:
+    global: false
+  spellcheck.languages:
+    global: null
+  statusbar.hide:
+    global: false
+  statusbar.padding:
+    global:
+      bottom: 1
+      left: 0
+      right: 0
+      top: 1
+  statusbar.position:
+    global: bottom
+  statusbar.widgets:
+    global:
+    - keypress
+    - url
+    - scroll
+    - history
+    - tabs
+    - progress
+  tabs.background:
+    global: false
+  tabs.close_mouse_button:
+    global: middle
+  tabs.close_mouse_button_on_bar:
+    global: new-tab
+  tabs.favicons.scale:
+    global: 1.0
+  tabs.favicons.show:
+    global: always
+  tabs.indicator.padding:
+    global:
+      bottom: 2
+      left: 0
+      right: 4
+      top: 2
+  tabs.indicator.width:
+    global: 3
+  tabs.last_close:
+    global: ignore
+  tabs.max_width:
+    global: -1
+  tabs.min_width:
+    global: -1
+  tabs.mode_on_change:
+    global: normal
+  tabs.mousewheel_switching:
+    global: true
+  tabs.new_position.related:
+    global: next
+  tabs.new_position.stacking:
+    global: true
+  tabs.new_position.unrelated:
+    global: last
+  tabs.padding:
+    global:
+      bottom: 0
+      left: 5
+      right: 5
+      top: 0
+  tabs.pinned.frozen:
+    global: true
+  tabs.pinned.shrink:
+    global: true
+  tabs.position:
+    global: top
+  tabs.select_on_remove:
+    global: next
+  tabs.show:
+    global: always
+  tabs.show_switching_delay:
+    global: 800
+  tabs.tabs_are_windows:
+    global: false
+  tabs.title.alignment:
+    global: left
+  tabs.title.format:
+    global: '{audio}{index}: {current_title}'
+  tabs.title.format_pinned:
+    global: '{index}'
+  tabs.undo_stack_size:
+    global: 100
+  tabs.width:
+    global: 20%
+  tabs.wrap:
+    global: true
+  url.auto_search:
+    global: naive
+  url.default_page:
+    global: https://start.duckduckgo.com/
+  url.incdec_segments:
+    global:
+    - path
+    - query
+  url.open_base_url:
+    global: false
+  url.searchengines:
+    global:
+      DEFAULT: https://duckduckgo.com/?q={}
+  url.start_pages:
+    global: https://start.duckduckgo.com
+  url.yank_ignored_parameters:
+    global:
+    - ref
+    - utm_source
+    - utm_medium
+    - utm_campaign
+    - utm_term
+    - utm_content
+  window.hide_decoration:
+    global: false
+  window.title_format:
+    global: '{perc}{current_title}{title_sep}qutebrowser'
