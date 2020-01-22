@@ -13,7 +13,7 @@ Dotfiles are used to customize your system. The “dotfiles” name is derived f
 | Shell                 | Zsh _([zimfw](https://github.com/zimfw/zimfw))_ |
 | DM                    | Lightdm, SLIM                                   |
 | Font                  | Iosevka, Iosevka Nerd Font                      |
-| Compositor            | Compton                                         |
+| Compositor            | Picom(compton fork)                             |
 | Notification          | Dunst                                           |
 | Terminal              | URxvt, Termite, suckless terminal               |
 | Launcher              | rofi, dmenu, jgmenu, j4-dmenu-desktop           |
@@ -36,7 +36,7 @@ Dotfiles are used to customize your system. The “dotfiles” name is derived f
 | Jgmenu     | [.config/jgmenu](https://github.com/mnabila/dotfiles/tree/master/.config/jgmenu)                                                                        |
 | Kvantum    | [.config/Kvantum](https://github.com/mnabila/dotfiles/tree/master/.config/Kvantum)                                                                      |
 | Ncmpcpp    | [.ncmpcpp](https://github.com/mnabila/dotfiles/tree/master/.ncmpcpp)                                                                                    |
-| Neovim     | [init.nvim](https://github.com/mnabila/nvimrc)                                                                               |
+| Neovim     | [init.nvim](https://github.com/mnabila/nvimrc)                                                                                                          |
 | Openbox    | [.config/openbox](https://github.com/mnabila/dotfiles/tree/master/.config/openbox)                                                                      |
 | Polybar    | [.config/polybar](https://github.com/mnabila/dotfiles/tree/master/.config/polybar)                                                                      |
 | Rofi       | [.config/rofi](https://github.com/mnabila/dotfiles/tree/master/.config/rofi)                                                                            |

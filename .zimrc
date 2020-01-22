@@ -1,126 +1,45 @@
-################
-# ZIM SETTINGS #
-################
+# Start configuration added by Zim install {{{
+# -------
+# Modules
+# -------
 
-# Set input mode to 'emacs' (default) or 'vi'.
-zstyle ':zim:input' mode 'emacs'
-
-
-# Select what modules you would like enabled. Modules are sourced in the order given.
-# zstyle ':zim' modules directory environment git git-info history input utility zsh-completions completion zsh-autosuggestions zsh-syntax-highlighting history-substring-search async pure
-zstyle ':zim' modules directory environment git-info history input utility zsh-completions completion zsh-autosuggestions zsh-syntax-highlighting history-substring-search async minimal 
-
-# Modules setup configuration.
-# See https://github.com/zimfw/zimfw/blob/develop/README.md#module-customization
-zstyle ':zim:module' zsh-completions 'url' 'zsh-users/zsh-completions'
-zstyle ':zim:module' zsh-autosuggestions 'url' 'zsh-users/zsh-autosuggestions'
-zstyle ':zim:module' zsh-syntax-highlighting 'url' 'zsh-users/zsh-syntax-highlighting'
-zstyle ':zim:module' gitstatus 'url' 'romkatv/gitstatus'
-zstyle ':zim:module' async 'url' 'mafredri/zsh-async'
-zstyle ':zim:module' pure 'url' 'sindresorhus/pure'
-zstyle ':zim:module' minimal 'url' 'subnixr/minimal'
-
-
-###################
-# MODULE SETTINGS #
-###################
+# Sets sane Zsh built-in environment options.
+zmodule environment
+# Provides handy git aliases and functions.
+zmodule git
+# Applies correct bindkeys for input events.
+zmodule input
+# Sets a custom terminal title.
+zmodule termtitle
+# Utility aliases and functions. Adds colour to ls, grep and less.
+zmodule utility
 
 #
 # Prompt
 #
+# Exposes git repository status information to prompts.
+zmodule git-info
+# A customizable version of steeef's prompt theme.
+zmodule steeef
 
-# Set your desired prompt here
-zprompt_theme='minimal'
+# Additional completion definitions for Zsh.
+zmodule zsh-users/zsh-completions
+# Enables and configures smart and extensive tab completion.
+# completion must be sourced after zsh-users/zsh-completions
+zmodule completion
+# Fish-like autosuggestions for Zsh.
+zmodule zsh-users/zsh-autosuggestions
+# Fish-like syntax highlighting for Zsh.
+# zsh-users/zsh-syntax-highlighting must be sourced after completion
+zmodule zsh-users/zsh-syntax-highlighting
+# Fish-like history search (up arrow) for Zsh.
+# zsh-users/zsh-history-substring-search must be sourced after zsh-users/zsh-syntax-highlighting
+zmodule zsh-users/zsh-history-substring-search
+# Because your terminal should be able to perform tasks asynchronously without external tools!
+zmodule mafredri/zsh-async
+# Pretty, minimal and fast ZSH prompt
+zmodule sindresorhus/pure --source async.zsh --source pure.zsh
+# A minimal zsh theme
+# zmodule subnixr/minimal
+# }}} End configuration added by Zim install
 
-# pure configuration {{{
-PURE_PROMPT_SYMBOL=❱❱❱
-PURE_PROMPT_VICMD_SYMBOL=❰❰❰
-# }}}
-#
-# minimal configuration {{{
-MNML_USER_CHAR='$'
-MNML_NOMRAL_CHAR='❰❰❰'
-MNML_INSERT_CHAR='❱❱❱'
-
-MNML_PROMPT=(mnml_ssh mnml_pyenv mnml_status mnml_keymap)
-MNML_RPROMPT=('mnml_cwd 3 0' mnml_git)
-MNML_INFOLN=(mnml_me_ls mnml_me_git)
-# }}}
-
-# Change prompt color
-zstyle ':prompt:pure:path' color yellow
-
-#
-# completion
-#
-
-# Set a custom path for the completion dump file.
-# If none is provided, the default ${ZDOTDIR:-${HOME}}/.zcompdump is used.
-#zstyle ':zim:completion' dumpfile "${ZDOTDIR:-${HOME}}/.zcompdump-${ZSH_VERSION}"
-
-#
-# environment
-#
-
-# Set the string below to the desired terminal title format string.
-# The terminal title is redrawn upon directory change, however, variables like
-# ${PWD} are only evaluated once. Use prompt expansion strings for dynamic data.
-# See http://zsh.sourceforge.net/Doc/Release/Prompt-Expansion.html#Simple-Prompt-Escapes
-# For example, '%n@%m: %1~' corresponds to 'username@host: /current/directory'.
-# zstyle ':zim:environment' termtitle '%n@%m: %1~'
-
-#
-# history
-#
-
-# Save the history in a custom file path.
-# If none is provided, the default ${ZDOTDIR:-${HOME}}/.zhistory is used.
-HISTFILE=${ZDOTDIR:-${HOME}}/.zsh_history
-
-#
-# input
-#
-
-# Enable double-dot expansion.
-# This appends '../' to your input for each '.' you type after an initial '..'
-zstyle ':zim:input' double-dot-expand yes
-
-#
-# utility
-#
-
-# Enable spelling correction prompts.
-# See http://zsh.sourceforge.net/Doc/Release/Options.html#index-CORRECT
-setopt CORRECT
-
-# Set a custom spelling correction prompt.
-SPROMPT='zsh: correct %F{red}%R%f to %F{green}%r%f [nyae]? '
-
-#
-# zsh-autosuggestions
-#
-
-# Customize the style that the suggestions are shown with.
-# See https://github.com/zsh-users/zsh-autosuggestions/blob/master/README.md#suggestion-highlight-style
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=6'
-
-#
-# zsh-syntax-highlighting
-#
-
-# Set what highlighters will be used.
-# See https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/docs/highlighters.md
-ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern)
-
-# Customize the main highlighter styles.
-# See https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/docs/highlighters/main.md#how-to-tweak-it
-typeset -A ZSH_HIGHLIGHT_STYLES
-ZSH_HIGHLIGHT_STYLES[comment]='fg=8'
-
-#
-# Keybindings
-#
-
-# Vi mode keybinding to open nvim
-autoload edit-command-line; zle -N edit-command-line
-bindkey -M vicmd e edit-command-line

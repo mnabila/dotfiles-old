@@ -27,7 +27,7 @@ export TERMCMD=st
 
 # Path
 export PATH="$PYENV_ROOT/bin:$PATH"
-export PATH="${HOME}/.gem/ruby/2.6.0/bin:$PATH"
+export PATH="${HOME}/.gem/ruby/2.7.0/bin:$PATH"
 export PATH="${HOME}/.local/bin:$PATH"
 export PATH="${HOME}/.config/scripts:$PATH"
 export PATH="/usr/lib/ccache/bin/:$PATH"

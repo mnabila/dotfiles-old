@@ -37,7 +37,7 @@ then
         ;;
       Hibernate)
         # $($USE_LOCKER) && "$LOCKER"; systemctl hibernate
-        systemctl suspend
+        systemctl hibernate
         ;;
       *)
         ;;

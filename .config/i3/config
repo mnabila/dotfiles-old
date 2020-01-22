@@ -358,7 +358,7 @@ bindsym Print exec --no-startup-id flameshot gui
 bindsym Shift+Print exec --no-startup-id flameshot full -p "$HOME/Pictures/screenshot"
 
 # Clipmenu
-bindsym $mod+p exec --no-startup-id clipmenu
+bindsym $mod+p exec --no-startup-id clipmenu -fn 'Iosevka-11' -nb '#282828' -nf '#ebdbb2' -sb '#d79921' -w '800' -x '300' -y '220' -i -p 'Clip'
 bindsym $mod+Shift+p exec --no-startup-id rm -rf /tmp/clipmenu/*
 
 # Restart, Suspend, Shutdown, Logout Dialog
@@ -497,8 +497,11 @@ for_window [class="Pulseaudio-equalizer-gtk"] floating enable border normal
 for_window [class="viper-gui"] floating enable border normal
 for_window [class="pgadmin4"] floating enable border normal
 for_window [class="mpv"] border pixel 1
+for_window [class="qutebrowser"] border pixel 1
 for_window [class="PPSSPPSDL"] border pixel 1
+for_window [class="Zathura"] border pixel 1
 for_window [class="Gcolor3"] floating enable border normal
+for_window [class="feh"] border pixel 1
 
 # 
 # AUTORUNS #

@@ -259,7 +259,7 @@ c.content.headers.referer = "same-domain"
 # User agent to send. Unset to send the default. Note that the value
 # read from JavaScript is always the global value.
 # Type: String
-c.content.headers.user_agent = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36"
+c.content.headers.user_agent = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36"
 
 # Enable host blocking.
 # Type: Bool
@@ -581,7 +581,8 @@ c.downloads.remove_finished = -1
 # `{line0}`: Same as `{line}`, but starting from index 0. * `{column0}`:
 # Same as `{column}`, but starting from index 0.
 # Type: ShellCommand
-c.editor.command = ["nvim", "-f", "{file}", "-c", "normal {line}G{column0}l"]
+# c.editor.command = ["vim", "-f", "{file}", "-c", "normal {line}G{column0}l"]
+c.editor.command = ["st", "-e", "nvim", "{file}"]
 
 # Encoding to use for the editor.
 # Type: Encoding
@@ -1090,6 +1091,7 @@ c.url.searchengines = {
     "gl": "https://gitlab.com/search?search={}",
     "gten": "https://translate.google.com/#view=home&op=translate&sl=auto&tl=en&text={}",
     "gtid": "https://translate.google.com/#view=home&op=translate&sl=auto&tl=id&text={}",
+    "gtjp": "https://translate.google.com/#view=home&op=translate&sl=auto&tl=ja&text={}",
     "mal": "https://myanimelist.net/search/all?q={}",
     "py": "https://pypi.org/search/?q={}",
     "wp": "https://id.wikipedia.org/w/index.php?search={}",
@@ -1115,7 +1117,7 @@ c.url.yank_ignored_parameters = [
 # Hide the window decoration.  This setting requires a restart on
 # Wayland.
 # Type: Bool
-c.window.hide_decoration = False
+c.window.hide_decoration = True
 
 # Format to use for the window title. The same placeholders like for
 # `tabs.title.format` are defined.
@@ -1272,7 +1274,7 @@ c.colors.messages.error.border = xresources["*color1"]
 
 # Foreground color of a warning message.
 # Type: QssColor
-c.colors.messages.warning.fg = xresources["*color15"]
+c.colors.messages.warning.fg = xresources["*color0"]
 
 # Background color of a warning message.
 # Type: QssColor
@@ -1410,15 +1412,15 @@ c.colors.tabs.bar.bg = xresources["*color0"]
 
 # Color gradient start for the tab indicator.
 # Type: QtColor
-c.colors.tabs.indicator.start = "#0000aa"
+c.colors.tabs.indicator.start = xresources["*color4"]
 
 # Color gradient end for the tab indicator.
 # Type: QtColor
-c.colors.tabs.indicator.stop = "#00aa00"
+c.colors.tabs.indicator.stop = xresources["*color2"]
 
 # Color for the tab indicator on errors.
 # Type: QtColor
-c.colors.tabs.indicator.error = "#ff0000"
+c.colors.tabs.indicator.error = xresources["*color1"]
 
 # Color gradient interpolation system for the tab indicator.
 # Type: ColorSystem
