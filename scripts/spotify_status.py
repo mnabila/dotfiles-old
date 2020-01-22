@@ -1,0 +1,1 @@
+../../Dotfiles/polybar/scripts/spotify_status.py
